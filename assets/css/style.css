@@ -1,0 +1,81 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:weight@200;300;400;500;600;700&display=swap');
+/*Universal Styling*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #004643;
+}
+/*button Primary styling*/
+.btn-primary{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn-primary button{
+    font-size: 25px;
+    font-weight: 500;
+    color: #001e1d;
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #f9bc60;
+    cursor: pointer;
+}
+.btn-primary button:hover{
+    cursor: pointer;
+    transform: translateY(-0.4rem);
+    transition: transform 150ms;
+}
+/*Button seconday styling*/
+.btn-secondary{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn-secondary button{
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn-secondary button:hover{
+    cursor: pointer;
+    transform: translateY(-0.4rem);
+    transition: transform 150ms;
+}
+/*Button Tertiary styling*/
+.btn-tertiary{
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn-tertiary button{
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    padding: 15px 30px;
+    border-color: #FFF;
+    outline: none;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn-tertiary button:hover{
+    cursor: pointer;
+    transform: translateY(-0.4rem);
+    transition: transform 150ms;
+}
