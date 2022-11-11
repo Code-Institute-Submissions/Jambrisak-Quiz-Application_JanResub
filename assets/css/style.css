@@ -107,6 +107,7 @@ body{
     font-weight: 600;
     color: #001e1d;
 }
+/*modal button styling*/
 .modal-buttons{
     height: 60px;
     display: flex;
@@ -150,7 +151,10 @@ body{
     background: #fff;
     border-radius: 5px;
 }
+/*Quiz Heads up display style*/
 .quiz-game header{
+    position: relative;
+    z-index: 99;
     height: 70px;
     padding: 0 30px;
     background: #fff;
@@ -193,4 +197,95 @@ body{
     border-radius: 5px;
     border: 1px solid #f9bc60;
     user-select: none;
+}
+/*Quiz game section style*/
+.quiz-game section{
+    padding: 25px 30px 20px 30px;
+    background: #fff;
+}
+.quiz-game section .question-text{
+    font-size: 25px;
+    font-weight: 600;
+}
+.quiz-game section .question-options-list{
+    padding: 20px 0;
+    display: block;
+}
+section .question-options-list .question-options{
+    background: #f9bc60;
+    border: 1px solid #001e1d;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+section .question-options-list .question-options:hover{
+    background: transparent;
+}
+.question-options-list .question-options:last-child{
+    margin-bottom: 0px;
+}
+.question-options-list .question-options .question-options-icon{
+    height: 26px;
+    width: 26px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 13px;
+    line-height: 24px;
+    position: relative;
+    pointer-events: none;
+}
+.question-options-list .question-options .question-options-icon.correct{
+    color: #23903c;
+    border-color: #23903c;
+    background: #d4edda;
+}
+.question-options-list .question-options .question-options-icon.false{
+    color: #a4283a;
+    border-color: #a4283a;
+    background: #f8d7da;
+}
+/*quiz game footer styling*/
+.quiz-game footer{
+    height: 60px;
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.quiz-game footer .total-questions span{
+    display: flex;
+    user-select: none;
+}
+footer .total-questions span p{
+    font-weight: bolder;
+    padding: 0 5px;
+
+}
+.total-questions span p:first-child{
+    padding-left: 0px;
+}
+footer .next-question-btn{
+    height: 40px;
+    padding: 0 13px;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    color: #001e1d;
+    background: #f9bc60;
+    border-radius: 5px;
+    border: 1px solid #001e1d;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+footer .next-question-btn:hover{
+    background: transparent;
 }
