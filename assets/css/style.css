@@ -13,12 +13,12 @@ body{
 /*button Primary styling*/
 .btn-primary{
     position: absolute;
-    top: 50%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .btn-primary button{
-    font-size: 25px;
+    font-size: 15px;
     font-weight: 500;
     color: #001e1d;
     padding: 15px 30px;
@@ -36,12 +36,12 @@ body{
 /*Button Tertiary styling*/
 .btn-tertiary{
     position: absolute;
-    top: 60%;
+    top: 54%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .btn-tertiary button{
-    font-size: 25px;
+    font-size: 15px;
     font-weight: 500;
     color: #fff;
     padding: 15px 30px;
@@ -73,6 +73,72 @@ body{
     color: #fffffe;
     top: 40px;
     left: -100px;
+}
+/*modal styling*/
+.modal_box{
+    position: absolute;
+    top: 43%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    width: 540px;
+    height: 320px;
+    background: #fff;
+    border-radius: 5px;
+    display: none;
+}
+.modal_title{
+    font-size: 20px;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    font-weight: 600;
+}
+.modal-list {
+    padding: 15px 35px;
+}
+.modal-info{
+    margin: 5px 0;
+    font-size: 17px;
+}
+.modal-info span{
+    font-weight: 600;
+    color: #001e1d;
+}
+.modal-buttons{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 35px;
+    border-top: 1px solid lightgray;
+}
+.modal-buttons button{
+    margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.modal-buttons button.modal-quit{
+    border-color: #001e1d;
+    background: transparent;
+    color: #001e1d;
+}
+.modal-buttons button.modal-quit:hover{
+    background: #f9bc60;
+    border-color: #f9bc60;
+}
+.modal-buttons button.modal-start{
+    border-color: #f9bc60;
+    background: #f9bc60;
+    color: #001e1d;
 }
 /*footer*/
 footer {
