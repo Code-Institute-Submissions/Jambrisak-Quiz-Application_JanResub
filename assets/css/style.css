@@ -33,33 +33,10 @@ body{
     transform: translateY(-0.4rem);
     transition: transform 150ms;
 }
-/*Button seconday styling*/
-.btn-secondary{
-    position: absolute;
-    top: 58%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.btn-secondary button{
-    font-size: 25px;
-    font-weight: 500;
-    color: #fff;
-    padding: 15px 30px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    background-color: transparent;
-    cursor: pointer;
-}
-.btn-secondary button:hover{
-    cursor: pointer;
-    transform: translateY(-0.4rem);
-    transition: transform 150ms;
-}
 /*Button Tertiary styling*/
 .btn-tertiary{
     position: absolute;
-    top: 66%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -78,4 +55,22 @@ body{
     cursor: pointer;
     transform: translateY(-0.4rem);
     transition: transform 150ms;
+}
+/*Front Page styling*/
+.front-page-title{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+.front-page-title img{
+    position: absolute;
+    left: 45px;
+    top: -35px;
+}
+.front-page-title h1{
+    position: relative;
+    font-size: 3.4rem;
+    color: #fffffe;
+    top: 40px;
+    left: -100px;
 }
