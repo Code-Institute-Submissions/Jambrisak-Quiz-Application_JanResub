@@ -140,3 +140,57 @@ body{
     background: #f9bc60;
     color: #001e1d;
 }
+/*quiz game styling*/
+.quiz-game{
+    position: absolute;
+    top: 43%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    background: #fff;
+    border-radius: 5px;
+}
+.quiz-game header{
+    height: 70px;
+    padding: 0 30px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
+}
+.quiz-game header .quiz-header{
+    font-size: 20px;
+    font-weight: 600;
+}
+.quiz-game header .quiz-timer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+    height: 45px;
+    background: #001e1d;
+    color: #fff;
+    border: 1px solid #001e1d;
+    border-radius: 5px;
+    padding: 0 8px;
+}
+.quiz-game header .quiz-timer .quiz-timer-text{
+    font-weight: 400;
+    font-size: 17px;
+    user-select: none;
+}
+.quiz-game header .quiz-timer .quiz-timer-seconds{
+    font-size: 18px;
+    font-weight: 500;
+    background: #f9bc60;
+    height: 30px;
+    width: 45px;
+    color: #000;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 1px solid #f9bc60;
+    user-select: none;
+}
