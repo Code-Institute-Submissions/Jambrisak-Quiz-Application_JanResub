@@ -150,6 +150,7 @@ body{
     width: 550px;
     background: #fff;
     border-radius: 5px;
+    display: none;
 }
 /*Quiz Heads up display style*/
 .quiz-game header{
