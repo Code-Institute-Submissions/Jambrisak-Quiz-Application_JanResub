@@ -140,22 +140,3 @@ body{
     background: #f9bc60;
     color: #001e1d;
 }
-/*footer*/
-footer {
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
-	background-color: #0f0e17;
-	height: 50px;
-	color: #f9bc60;
-}
-.social-icons {
-	color: #f9bc60;
-	font-size: 2rem;
-	padding: 10px;
-	margin-bottom: 10px;
-}
-.social-icons:hover {
-	color: #fff;
-}
