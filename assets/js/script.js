@@ -21,3 +21,6 @@ modal_start.onclick = () =>{
 }
 
 //Fetching questions and options from array
+function fetchQuestions(){
+    const question_text
+}
