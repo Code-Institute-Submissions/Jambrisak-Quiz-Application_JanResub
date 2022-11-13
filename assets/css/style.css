@@ -34,13 +34,13 @@ body{
     transition: transform 150ms;
 }
 /*Button Tertiary styling*/
-.btn_primary {
+.btn_tertiary {
     position: absolute;
     top: 54%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.btn_primary button{
+.btn_tertiary button{
     font-size: 15px;
     font-weight: 500;
     color: #fff;
@@ -52,7 +52,7 @@ body{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.btn_primary button:hover{
+.btn_tertiary button:hover{
     background: #f9bc60;
     border: none;
     color: #001e1d;

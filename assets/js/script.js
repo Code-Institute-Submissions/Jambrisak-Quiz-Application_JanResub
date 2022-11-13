@@ -6,5 +6,5 @@ const modal_start = document.querySelector(".buttons .modal_start");
 
 //If statement for start quiz button, when clicked
 btn_primary.onclick = () =>{
-    modal_box.classList.add("");
+    modal_box.classList.add("activeInfo");
 }
