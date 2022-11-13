@@ -50,11 +50,12 @@ body{
     border-radius: 5px;
     background-color: transparent;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 .btn-tertiary button:hover{
-    cursor: pointer;
-    transform: translateY(-0.4rem);
-    transition: transform 150ms;
+    background: #f9bc60;
+    border: none;
+    color: #001e1d;
 }
 /*Front Page styling*/
 .front-page-title{
