@@ -5,6 +5,7 @@ const modal_quit = modal_box.querySelector(".modal_quit");
 const modal_start = modal_box.querySelector(".modal_start");
 const quiz_game = document.querySelector(".quiz_game");
 const next_question_btn = quiz_game.querySelector(".next_question_btn");
+const question_options_list = document.querySelector(".question_options_list");
 //variables
 let total_questions = 0;
 let questions_number = 1;
@@ -27,7 +28,6 @@ modal_start.onclick = () =>{
 //Fetching questions and options from array and showing them
 function fetchQuestions(index){
     const question_text = document.querySelector(".question_text");
-    const question_options_list = document.querySelector(".question_options_list");
     let question_tag = '<span>'+ questions[index].question_number + ". "+ questions[index].the_question +'</span>';
     let option_tag = '<div class="question_options">'+ questions[index].question_options[0] + '<span></span></div>' 
                     + '<div class="question_options">'+ questions[index].question_options[1] + '<span></span></div>' 
@@ -62,11 +62,15 @@ function questionCounter(index){
 function questionsOptionSelected(correct_answer){
     let playerAnswer = correct_answer.textContent;
     let playerCorrectAnswer = questions[total_questions].correct_answer;
+    let optionsDisabled = question_options_list.children.length;
     if(playerAnswer == playerCorrectAnswer){
         correct_answer.classList.add("correct_choice");
         console.log("Answer is the correct one");
     }else{
         correct_answer.classList.add("incorrect_choice");
         console.log("Answer is the wrong one");
+    }
+    for (let i = 0; i < optionsDisabled; i++){
+        question_options_list.children[i].classList.add("disabled_choice");
     }
 }

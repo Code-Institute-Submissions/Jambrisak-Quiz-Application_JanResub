@@ -283,6 +283,9 @@ section .question_options_list .question_options:hover{
     background: #a4283a;
     border-color: #001e1d;
 }
+.question_options_list .question_options.disabled_choice{
+    pointer-events: none;
+}
 /*quiz game footer styling*/
 .quiz_game footer{
     height: 60px;
