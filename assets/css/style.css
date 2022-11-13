@@ -79,12 +79,13 @@ body{
     position: absolute;
     top: 43%;
     left: 51%;
-    transform: translate(-50%, -50%);
     width: 540px;
     height: 320px;
     background: #fff;
     border-radius: 5px;
-    display: none;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
 }
 .modal_title{
     font-size: 20px;
@@ -146,11 +147,12 @@ body{
     position: absolute;
     top: 43%;
     left: 51%;
-    transform: translate(-50%, -50%);
     width: 550px;
     background: #fff;
     border-radius: 5px;
-    display: none;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
 }
 /*Quiz Heads up display style*/
 .quiz-game header{
@@ -304,7 +306,9 @@ footer .next-question-btn:hover{
     position: absolute;
     top: 39%;
     left: 51%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
 }
 .end_game_result .end_game_result_icon{
     font-size:100px;
