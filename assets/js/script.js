@@ -27,11 +27,20 @@ modal_start.onclick = () =>{
 function fetchQuestions(index){
     const question_text = document.querySelector(".question_text");
     const question_options_list = document.querySelector(".question_options_list");
-    let question_tag = '<span>'+ questions[index].the_question +'</span>';
+    let question_tag = '<span>'+ questions[index].question_number + ". "+ questions[index].the_question +'</span>';
     let option_tag = '<div class="question_options">'+ questions[index].question_options[0] + '<span></span></div>' 
                     + '<div class="question_options">'+ questions[index].question_options[1] + '<span></span></div>' 
                     + '<div class="question_options">'+ questions[index].question_options[2] + '<span></span></div>' 
                     + '<div class="question_options">'+ questions[index].question_options[3] + '<span></span></div>';
     question_text.innerHTML = question_tag;
     question_options_list.innerHTML = option_tag;
+}
+//next question btn onclick if statement
+next_question_btn.onclick = () =>{
+    if(total_questions < questions.length - 1){
+        total_questions++;
+        fetchQuestions(total_questions);
+    }else{
+        console.log("Questions completed");
+    }
 }
