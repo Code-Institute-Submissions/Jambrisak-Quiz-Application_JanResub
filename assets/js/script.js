@@ -4,6 +4,7 @@ const modal_box = document.querySelector(".modal_box");
 const modal_quit = modal_box.querySelector(".modal_quit");
 const modal_start = modal_box.querySelector(".modal_start");
 const quiz_game = document.querySelector(".quiz_game");
+let total_questions = 0;
 
 //onclick to show modal_box
 btn_primary.onclick = () =>{
@@ -18,3 +19,5 @@ modal_start.onclick = () =>{
     modal_box.classList.remove("activeInfo");
     quiz_game.classList.add("activeQuiz");
 }
+
+//Fetching questions and options from array
