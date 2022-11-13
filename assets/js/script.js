@@ -63,9 +63,10 @@ function questionsOptionSelected(correct_answer){
     let playerAnswer = correct_answer.textContent;
     let playerCorrectAnswer = questions[total_questions].correct_answer;
     if(playerAnswer == playerCorrectAnswer){
-        correct_answer.classList.add("correct");
+        correct_answer.classList.add("correct_choice");
         console.log("Answer is the correct one");
     }else{
+        correct_answer.classList.add("incorrect_choice");
         console.log("Answer is the wrong one");
     }
 }

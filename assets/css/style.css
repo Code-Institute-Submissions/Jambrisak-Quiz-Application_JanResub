@@ -271,10 +271,16 @@ section .question_options_list .question_options:hover{
     border-color: #a4283a;
     background: #f8d7da;
 }
-.question_options_list .question_options.correct{
+.question_options_list .question_options.correct_choice{
     color: #001e1d;
     font-weight: 600;
     background: #23903c;
+    border-color: #001e1d;
+}
+.question_options_list .question_options.incorrect_choice{
+    color: #001e1d;
+    font-weight: 600;
+    background: #a4283a;
     border-color: #001e1d;
 }
 /*quiz game footer styling*/
