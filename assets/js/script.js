@@ -7,7 +7,7 @@ const quiz_game = document.querySelector(".quiz_game");
 const next_question_btn = quiz_game.querySelector(".next_question_btn");
 //variables
 let total_questions = 0;
-
+let questions_number = 1;
 //onclick to show modal_box
 btn_primary.onclick = () =>{
     modal_box.classList.add("activeInfo");
@@ -21,6 +21,7 @@ modal_start.onclick = () =>{
     modal_box.classList.remove("activeInfo");
     quiz_game.classList.add("activeQuiz");
     fetchQuestions(0);
+    questionCounter(1);
 }
 
 //Fetching questions and options from array and showing them
@@ -34,13 +35,25 @@ function fetchQuestions(index){
                     + '<div class="question_options">'+ questions[index].question_options[3] + '<span></span></div>';
     question_text.innerHTML = question_tag;
     question_options_list.innerHTML = option_tag;
+    const question_option = question_options_list.querySelectorAll(".question_options");
+    for(let i = 0; i < question_option.length; i++){
+        question_option[i].setAttribute("onclick", "question_option_selected(this)");
+    }
 }
 //next question btn onclick if statement
 next_question_btn.onclick = () =>{
     if(total_questions < questions.length - 1){
         total_questions++;
+        questions_number++;
         fetchQuestions(total_questions);
+        questionCounter(questions_number);
     }else{
         console.log("Questions completed");
     }
+}
+//Question counter function
+function questionCounter(index){
+    const total_questions_counter = quiz_game.querySelector(".total_questions_counter");
+    let Question_Counter = '<span><p>'+ total_questions +'</p>of<p>'+ questions.length +'</p>Questions</span';
+    total_questions_counter.innerHTML = Question_Counter;
 }

@@ -280,16 +280,16 @@ section .question_options_list .question_options:hover{
     align-items: center;
     justify-content:space-between;
 }
-.quiz_game footer .total_questions span{
+.quiz_game footer .total_questions_counter span{
     display: flex;
     user-select: none;
 }
-footer .total_questions span p{
+footer .total_questions_counter span p{
     font-weight: bolder;
     padding: 0 5px;
 
 }
-.total_questions span p:first-child{
+.total_questions_counter span p:first-child{
     padding-left: 0px;
 }
 footer .next_question_btn{

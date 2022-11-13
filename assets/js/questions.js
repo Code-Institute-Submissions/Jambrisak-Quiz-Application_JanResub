@@ -223,7 +223,7 @@ let questions = [
         ]
     },
     {
-        question_number: 22,
+        question_number: 21,
         the_question: "What year was the United States Declaration of Independence signed?",
         correct_answer: "1776",
         question_options: [
@@ -234,7 +234,7 @@ let questions = [
         ]
     },
     {
-        question_number: 23,
+        question_number: 22,
         the_question: "When did Lithuania declare independence from the Soviet Union?",
         correct_answer: "March 11th, 1990",
         question_options: [
@@ -245,7 +245,7 @@ let questions = [
         ]
     },
     {
-        question_number: 24,
+        question_number: 23,
         the_question: "The Hagia Sophia was commissioned by which emperor of the Byzantine Empire",
         correct_answer: "Justinian I",
         question_options: [
@@ -256,7 +256,7 @@ let questions = [
         ]
     },
     {
-        question_number: 25,
+        question_number: 24,
         the_question: "What was Napoleon Bonaparte's name before he changed it?",
         correct_answer: "Napoleone di Buonaparte",
         question_options: [
@@ -267,7 +267,7 @@ let questions = [
         ]
     },
     {
-        question_number: 26,
+        question_number: 25,
         the_question: "During the Spanish Civil War (1936), Francisco Franco fought for which political faction?",
         correct_answer: "Nationalist Spain",
         question_options: [
@@ -278,7 +278,7 @@ let questions = [
         ]
     },
     {
-        question_number: 27,
+        question_number: 26,
         the_question: "What was found in 1946 by two young shepards near a cave?",
         correct_answer: "Dead Sea Scrolls",
         question_options: [
@@ -289,7 +289,7 @@ let questions = [
         ]
     },
     {
-        question_number: 28,
+        question_number: 27,
         the_question: "The Battle of Hastings was fought in which year?",
         correct_answer: "Napoleone di Buonaparte",
         question_options: [
@@ -300,7 +300,7 @@ let questions = [
         ]
     },
     {
-        question_number: 29,
+        question_number: 28,
         the_question: "When was the city of Rome, Italy founded?",
         correct_answer: "753 BCE",
         question_options: [
@@ -311,7 +311,7 @@ let questions = [
         ]
     },
     {
-        question_number: 30,
+        question_number: 29,
         the_question: "How many women joined the United States Armed Services during World War II?",
         correct_answer: "350,000",
         question_options: [
@@ -322,7 +322,7 @@ let questions = [
         ]
     },
     {
-        question_number: 31,
+        question_number: 30,
         the_question: "What was the code name for the Allied invasion of Southern France on August 15th, 1944?",
         correct_answer: "Operation Dragoon",
         question_options: [
@@ -330,215 +330,6 @@ let questions = [
             "Operation Overlord",
             "Operation Torch",
             "Operation Market Garden"
-        ]
-    },
-    {
-        question_number: 32,
-        the_question: "How long did the Warsaw Uprising during World War II last?",
-        correct_answer: "63 Days",
-        question_options: [
-            "20 Days",
-            "55 Days",
-            "63 Days",
-            "224 Days"
-        ]
-    },
-    {
-        question_number: 33,
-        the_question: "What was the name of the German offensive operation in October 1941 to take Moscow before winter?",
-        correct_answer: "Operation Typhoon",
-        question_options: [
-            "Operation Sunflower",
-            "Case Blue",
-            "Operation Barbarossa",
-            "Operation Typhoon"
-        ]
-    },
-    {
-        question_number: 34,
-        the_question: "The main objective of the German operation Case Blue during World War II was originally to capture what?",
-        correct_answer: "Caucasus",
-        question_options: [
-            "Stalingrad",
-            "Voronezh",
-            "Caucasus",
-            "Crimea"
-        ]
-    },
-    {
-        question_number: 35,
-        the_question: "Which of the following was not one of Joseph Stalin's ten blows during World War II?",
-        correct_answer: "Vistula-Oder Offensive",
-        question_options: [
-            "Leningrad-Novgorod Offensive",
-            "Case Blue",
-            "Operation Barbarossa",
-            "Crimean Offensive"
-        ]
-    },
-    {
-        question_number: 36,
-        the_question: "What did the abbreviation RMS stand for in the RMS Titanic in 1912?",
-        correct_answer: "Royal Mail Ship",
-        question_options: [
-            "Royal Majesty Service",
-            "Regular Maritime Schedule",
-            "Regulated Maelstrom Sensor",
-            "Royal Mail Ship"
-        ]
-    },
-    {
-        question_number: 37,
-        the_question: "Toussaint Louverture led a successful slave revolt in which country?",
-        correct_answer: "Haiti",
-        question_options: [
-            "France",
-            "Cuba",
-            "Haiti",
-            "United States"
-        ]
-    },
-    {
-        question_number: 38,
-        the_question: "Which English king was married to Eleanor of Aquitaine?",
-        correct_answer: "Henry II",
-        question_options: [
-            "Henry II",
-            "Richard I",
-            "Henry I",
-            "Henry V"
-        ]
-    },
-    {
-        question_number: 39,
-        the_question: "Who was the first man to travel into outer space twice?",
-        correct_answer: "Operation Typhoon",
-        question_options: [
-            "Vladimir Komarov",
-            "Charles Conrad",
-            "Yuri Gagarin",
-            "Gus Grissom"
-        ]
-    },
-    {
-        question_number: 40,
-        the_question: "Who assassinated President James A. Garfield?",
-        correct_answer: "Charles Guiteau",
-        question_options: [
-            "Sirhan Sirhan",
-            "Charles Guiteau",
-            "Leon Czolgosz",
-            "John Wilkes Booth"
-        ]
-    },
-    {
-        question_number: 41,
-        the_question: "During World War I, which nation's monarchs were blood related?",
-        correct_answer: "England, Germany, Russia",
-        question_options: [
-            "France, Russia, Germany",
-            "Serbia, Russia, Croatia",
-            "England, Germany, Russia",
-            "Germany, Spain, Austria"
-        ]
-    },
-    {
-        question_number: 42,
-        the_question: "Which U.S. president was said to have been too honest to lie to his father about chopping down a cherry tree?",
-        correct_answer: "George Washington",
-        question_options: [
-            "Abraham Lincoln",
-            "George Washington",
-            "Thomas Jefferson",
-            "James Monroe"
-        ]
-    },
-    {
-        question_number: 43,
-        the_question: "The Bohemian Revolt (1618-1620) started after Protestants in Prague did what to their Catholic Lords Regents?",
-        correct_answer: "Threw them out of a window",
-        question_options: [
-            "Insulted their mothers",
-            "Locked them in stockades",
-            "Hung them",
-            "Threw them out of a window"
-        ]
-    },
-    {
-        question_number: 44,
-        the_question: "After the 1516 Battle of Marj Dabiq, the Ottoman Empire took control of Jerusalem from which sultanate?",
-        correct_answer: "Mamluk",
-        question_options: [
-            "Mamluk",
-            "Ummayyad",
-            "Ayyubid",
-            "Seljuq"
-        ]
-    },
-    {
-        question_number: 45,
-        the_question: "The coat of arms of the King of Spain contains the arms from the monarchs of Castille, Leon, Aragon and which other former Iberian kingdom?",
-        correct_answer: "Navarre",
-        question_options: [
-            "Galicia",
-            "Catalonia",
-            "Granada",
-            "Navarre"
-        ]
-    },
-    {
-        question_number: 46,
-        the_question: "Which of the following physicists did NOT work on the Manhattan project?",
-        correct_answer: "Murray Gell-Mann",
-        question_options: [
-            "Richard Feynman",
-            "J. Robert Oppenheimer",
-            "Murray Gell-Mann",
-            "John Von-Neumann"
-        ]
-    },
-    {
-        question_number: 47,
-        the_question: "Which is the hull NO. of the Fletcher class destroyer Fletcher?",
-        correct_answer: "DD-445",
-        question_options: [
-            "DD-992",
-            "DD-445",
-            "DD-446",
-            "DD-444"
-        ]
-    },
-    {
-        question_number: 48,
-        the_question: "Which of these theoretical phycisists first predicted the existence of antimatter?",
-        correct_answer: "Paul Dirac",
-        question_options: [
-            "Niels Bohr",
-            "Werner Heisenberg",
-            "Albert Einstein",
-            "Paul Dirac"
-        ]
-    },
-    {
-        question_number: 49,
-        the_question: "Which of these positions did the astronomer and physicist Isaac Newton not hold?",
-        correct_answer: "Surveyor to the City of London",
-        question_options: [
-            "Surveyor to the City of London",
-            "Warden of the Royal Mint",
-            "Member of Parliament",
-            "Professor of Mathematics"
-        ]
-    },
-    {
-        question_number: 50,
-        the_question: "What is the name of the Boeing B-29 that dropped the Little Boy atomic bomb on Hiroshima?",
-        correct_answer: "Enola Gay",
-        question_options: [
-            "The Great Artiste",
-            "Full House",
-            "Enola Gay",
-            "Necessary Evil"
         ]
     },
 ];
