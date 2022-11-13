@@ -58,17 +58,17 @@ body{
     color: #001e1d;
 }
 /*Front Page styling*/
-.front-page-title{
+.front_page_title{
     position: absolute;
     top: 30%;
     left: 45%;
 }
-.front-page-title img{
+.front_page_title img{
     position: absolute;
     left: 45px;
     top: -35px;
 }
-.front-page-title h1{
+.front_page_title h1{
     position: relative;
     font-size: 3.4rem;
     color: #fffffe;
@@ -100,19 +100,19 @@ body{
     padding: 0 30px;
     font-weight: 600;
 }
-.modal-list {
+.modal_list {
     padding: 15px 35px;
 }
-.modal-info{
+.modal_info{
     margin: 5px 0;
     font-size: 17px;
 }
-.modal-info span{
+.modal_info span{
     font-weight: 600;
     color: #001e1d;
 }
 /*modal button styling*/
-.modal-buttons{
+.modal_buttons{
     height: 60px;
     display: flex;
     align-items: center;
@@ -120,7 +120,7 @@ body{
     padding: 0 35px;
     border-top: 1px solid lightgray;
 }
-.modal-buttons button{
+.modal_buttons button{
     margin: 0 5px;
     height: 40px;
     width: 100px;
@@ -131,22 +131,22 @@ body{
     cursor: pointer;
     font-weight: 500;
 }
-.modal-buttons button.modal-quit{
+.modal_buttons button.modal_quit{
     border-color: #001e1d;
     background: transparent;
     color: #001e1d;
 }
-.modal-buttons button.modal-quit:hover{
+.modal_buttons button.modal_quit:hover{
     background: #f9bc60;
     border-color: #f9bc60;
 }
-.modal-buttons button.modal-start{
+.modal_buttons button.modal_start{
     border-color: #f9bc60;
     background: #f9bc60;
     color: #001e1d;
 }
 /*quiz game styling*/
-.quiz-game{
+.quiz_game{
     position: absolute;
     top: 43%;
     left: 51%;
@@ -160,7 +160,7 @@ body{
                 0px 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /*Quiz Heads up display style*/
-.quiz-game header{
+.quiz_game header{
     position: relative;
     z-index: 99;
     height: 70px;
@@ -172,11 +172,11 @@ body{
     border-radius: 5px 5px 0 0;
     box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
 }
-.quiz-game header .quiz-header{
+.quiz_game header .quiz_header{
     font-size: 20px;
     font-weight: 600;
 }
-.quiz-game header .quiz-timer{
+.quiz_game header .quiz_timer{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -188,12 +188,12 @@ body{
     border-radius: 5px;
     padding: 0 8px;
 }
-.quiz-game header .quiz-timer .quiz-timer-text{
+.quiz_game header .quiz_timer .quiz_timer_text{
     font-weight: 400;
     font-size: 17px;
     user-select: none;
 }
-.quiz-game header .quiz-timer .quiz-timer-seconds{
+.quiz_game header .quiz_timer .quiz_timer_seconds{
     font-size: 18px;
     font-weight: 500;
     background: #f9bc60;
@@ -207,19 +207,19 @@ body{
     user-select: none;
 }
 /*Quiz game section style*/
-.quiz-game section{
+.quiz_game section{
     padding: 25px 30px 20px 30px;
     background: #fff;
 }
-.quiz-game section .question-text{
+.quiz_game section .question_text{
     font-size: 25px;
     font-weight: 600;
 }
-.quiz-game section .question-options-list{
+.quiz_game section .question_options_list{
     padding: 20px 0;
     display: block;
 }
-section .question-options-list .question-options{
+section .question_options_list .question_options{
     background: #f9bc60;
     border: 1px solid #001e1d;
     border-radius: 5px;
@@ -232,13 +232,13 @@ section .question-options-list .question-options{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-section .question-options-list .question-options:hover{
+section .question_options_list .question_options:hover{
     background: transparent;
 }
-.question-options-list .question-options:last-child{
+.question_options_list .question_options:last-child{
     margin-bottom: 0px;
 }
-.question-options-list .question-options .question-options-icon{
+.question_options_list .question_options .question_options_icon{
     height: 26px;
     width: 26px;
     border: 2px solid transparent;
@@ -249,18 +249,18 @@ section .question-options-list .question-options:hover{
     position: relative;
     pointer-events: none;
 }
-.question-options-list .question-options .question-options-icon.correct{
+.question_options_list .question_options .question_options_icon.correct{
     color: #23903c;
     border-color: #23903c;
     background: #d4edda;
 }
-.question-options-list .question-options .question-options-icon.false{
+.question_options_list .question_options .question_options_icon.false{
     color: #a4283a;
     border-color: #a4283a;
     background: #f8d7da;
 }
 /*quiz game footer styling*/
-.quiz-game footer{
+.quiz_game footer{
     height: 60px;
     width: 100%;
     padding: 0 30px;
@@ -268,19 +268,19 @@ section .question-options-list .question-options:hover{
     align-items: center;
     justify-content:space-between;
 }
-.quiz-game footer .total-questions span{
+.quiz_game footer .total_questions span{
     display: flex;
     user-select: none;
 }
-footer .total-questions span p{
+footer .total_questions span p{
     font-weight: bolder;
     padding: 0 5px;
 
 }
-.total-questions span p:first-child{
+.total_questions span p:first-child{
     padding-left: 0px;
 }
-footer .next-question-btn{
+footer .next_question_btn{
     height: 40px;
     padding: 0 13px;
     font-size: 18px;
@@ -294,7 +294,7 @@ footer .next-question-btn{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-footer .next-question-btn:hover{
+footer .next_question_btn:hover{
     background: transparent;
 }
 /*End Game styles*/
