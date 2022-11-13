@@ -24,7 +24,6 @@ modal_start.onclick = () =>{
     fetchQuestions(0);
     questionCounter(1);
 }
-
 //Fetching questions and options from array and showing them
 function fetchQuestions(index){
     const question_text = document.querySelector(".question_text");
@@ -62,15 +61,21 @@ function questionCounter(index){
 function questionsOptionSelected(correct_answer){
     let playerAnswer = correct_answer.textContent;
     let playerCorrectAnswer = questions[total_questions].correct_answer;
-    let optionsDisabled = question_options_list.children.length;
+    let allQuestionOptions = question_options_list.children.length;
     if(playerAnswer == playerCorrectAnswer){
         correct_answer.classList.add("correct_choice");
         console.log("Answer is the correct one");
     }else{
         correct_answer.classList.add("incorrect_choice");
         console.log("Answer is the wrong one");
+
+        for(let i = 0; i <allQuestionOptions; i++){
+            if(question_options_list.children[i].textContent == playerCorrectAnswer){
+                question_options_list.children[i].setAttribute("class", "question_options correct_choice");
+            }
+        }
     }
-    for (let i = 0; i < optionsDisabled; i++){
+    for (let i = 0; i < allQuestionOptions; i++){
         question_options_list.children[i].classList.add("disabled_choice");
     }
 }
