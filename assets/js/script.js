@@ -1,10 +1,20 @@
 //variables
-const btn_primary = document.querySelector(".btn_primary button");
+const btn_primary = document.querySelector(".btn_primary");
 const modal_box = document.querySelector(".modal_box");
-const modal_quit = modal_box.querySelector(".buttons .modal_quit");
-const modal_start = document.querySelector(".buttons .modal_start");
+const modal_quit = modal_box.querySelector(".modal_quit");
+const modal_start = modal_box.querySelector(".modal_start");
+const quiz_game = document.querySelector(".quiz_game");
 
-//If statement for start quiz button, when clicked
+//onclick to show modal_box
 btn_primary.onclick = () =>{
     modal_box.classList.add("activeInfo");
+}
+//Onclick to hide modal_box
+modal_quit.onclick = () =>{
+    modal_box.classList.remove("activeInfo");
+}
+//Onclick to hide modal_box and show quiz_game
+modal_start.onclick = () =>{
+    modal_box.classList.remove("activeInfo");
+    quiz_game.classList.add("activeQuiz");
 }
