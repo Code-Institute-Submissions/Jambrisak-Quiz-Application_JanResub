@@ -61,5 +61,11 @@ function questionCounter(index){
 //Question Option Selected function
 function questionsOptionSelected(correct_answer){
     let playerAnswer = correct_answer.textContent;
-    console.log("playerAnswer");
+    let playerCorrectAnswer = questions[total_questions].correct_answer;
+    if(playerAnswer == playerCorrectAnswer){
+        correct_answer.classList.add("correct");
+        console.log("Answer is the correct one");
+    }else{
+        console.log("Answer is the wrong one");
+    }
 }
