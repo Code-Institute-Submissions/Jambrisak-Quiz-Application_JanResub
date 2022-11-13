@@ -18,9 +18,9 @@ let questions = [
         the_question: "When did the French Revolution begin?",
         correct_answer: "1789",
         question_options: [
-            "1789",
-            "1823",
             "1756",
+            "1823",
+            "1789",
             "1799"
         ]
     },
@@ -29,9 +29,9 @@ let questions = [
         the_question: "Which naval battle was considered the turning point of the Pacific Ocean Theater during World War 2?",
         correct_answer: "Battle of Midway",
         question_options: [
-            "Battle of Midway",
-            "Attack on Truk Island",
             "Attack on Pearl Harbor",
+            "Attack on Truk Island",
+            "Battle of Midway",
             "Battle of the Coral Sea"
         ]
     },
@@ -40,10 +40,10 @@ let questions = [
         the_question: "Pianist Chopin was a composer of which musical era?",
         correct_answer: "Romantic",
         question_options: [
-            "Romantic",
+            "Renaissance",
             "Classic",
             "Baroque",
-            "Renaissance"
+            "Romantic"
         ]
     },
     {
@@ -51,8 +51,8 @@ let questions = [
         the_question: "In the year 1900, what were the most popular first names given to boy and girl babies born in the United States?",
         correct_answer: "John and Mary",
         question_options: [
-            "John and Mary",
             "Joseph and Catherine",
+            "John and Mary",
             "William and Elizabeth",
             "George and Anne"
         ]
@@ -73,10 +73,10 @@ let questions = [
         the_question: "What was the name of the spy ring that helped the United States win the Revolutionary War?",
         correct_answer: "Culper Ring",
         question_options: [
-            "Culper Ring",
+            "Unnamed",
             "New York Spy Ring",
             "Washington's Spies",
-            "Unnamed"
+            "Culper Ring"
         ]
     },
     {
