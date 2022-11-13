@@ -37,7 +37,7 @@ function fetchQuestions(index){
     question_options_list.innerHTML = option_tag;
     const question_option = question_options_list.querySelectorAll(".question_options");
     for(let i = 0; i < question_option.length; i++){
-        question_option[i].setAttribute("onclick", "question_option_selected(this)");
+        question_option[i].setAttribute("onclick", "questionsOptionSelected(this)");
     }
 }
 //next question btn onclick if statement
@@ -54,6 +54,12 @@ next_question_btn.onclick = () =>{
 //Question counter function
 function questionCounter(index){
     const total_questions_counter = quiz_game.querySelector(".total_questions_counter");
-    let Question_Counter = '<span><p>'+ total_questions +'</p>of<p>'+ questions.length +'</p>Questions</span';
+    let Question_Counter = '<span><p>'+ index +'</p>of<p>'+ questions.length +'</p>Questions</span';
     total_questions_counter.innerHTML = Question_Counter;
+}
+
+//Question Option Selected function
+function questionsOptionSelected(correct_answer){
+    let playerAnswer = correct_answer.textContent;
+    console.log("playerAnswer");
 }
