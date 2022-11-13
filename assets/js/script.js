@@ -1,9 +1,11 @@
-//variables
+//Constants
 const btn_primary = document.querySelector(".btn_primary");
 const modal_box = document.querySelector(".modal_box");
 const modal_quit = modal_box.querySelector(".modal_quit");
 const modal_start = modal_box.querySelector(".modal_start");
 const quiz_game = document.querySelector(".quiz_game");
+const next_question_btn = quiz_game.querySelector(".next_question_btn");
+//variables
 let total_questions = 0;
 
 //onclick to show modal_box
