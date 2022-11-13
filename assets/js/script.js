@@ -9,6 +9,8 @@ const question_options_list = document.querySelector(".question_options_list");
 //variables
 let total_questions = 0;
 let questions_number = 1;
+let correctIcon = '<div class="question_options_icon"><i class="fas fa-check"></i></div>';
+let wrongIcon = '<div class="question_options_icon"><i class="fas fa-times"></i></div>';
 //onclick to show modal_box
 btn_primary.onclick = () =>{
     modal_box.classList.add("activeInfo");
@@ -65,13 +67,17 @@ function questionsOptionSelected(correct_answer){
     if(playerAnswer == playerCorrectAnswer){
         correct_answer.classList.add("correct_choice");
         console.log("Answer is the correct one");
+        correct_answer.insertAdjacentHTML("beforeend", correctIcon);
     }else{
         correct_answer.classList.add("incorrect_choice");
         console.log("Answer is the wrong one");
+        correct_answer.insertAdjacentHTML("beforeend", wrongIcon);
 
         for(let i = 0; i <allQuestionOptions; i++){
             if(question_options_list.children[i].textContent == playerCorrectAnswer){
                 question_options_list.children[i].setAttribute("class", "question_options correct_choice");
+                question_options_list.children[i].insertAdjacentHTML("beforeend", correctIcon);
+                
             }
         }
     }

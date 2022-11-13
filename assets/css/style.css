@@ -263,12 +263,12 @@ section .question_options_list .question_options:hover{
 }
 .question_options_list .question_options .question_options_icon.correct{
     color: #23903c;
-    border-color: #23903c;
+    border-color: #001e1d;
     background: #d4edda;
 }
 .question_options_list .question_options .question_options_icon.false{
     color: #a4283a;
-    border-color: #a4283a;
+    border-color: #001e1d;
     background: #f8d7da;
 }
 .question_options_list .question_options.correct_choice{
