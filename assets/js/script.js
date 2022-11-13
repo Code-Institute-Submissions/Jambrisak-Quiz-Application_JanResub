@@ -18,9 +18,12 @@ modal_quit.onclick = () =>{
 modal_start.onclick = () =>{
     modal_box.classList.remove("activeInfo");
     quiz_game.classList.add("activeQuiz");
+    fetchQuestions();
 }
 
 //Fetching questions and options from array
 function fetchQuestions(){
-    const question_text
+    const question_text = document.querySelector(".question_text");
+    let question_tag = '<span>'+ questions[0].the_question +'</span>';
+    question_text.innerHTML = question_tag;
 }
