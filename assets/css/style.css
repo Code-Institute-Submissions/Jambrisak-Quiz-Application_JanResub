@@ -90,8 +90,7 @@ body{
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
     pointer-events: none;
-    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2),
-                0px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 }
 .modal_box.activeInfo{
     z-index: 5;
@@ -168,8 +167,6 @@ body{
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
     pointer-events: none;
-    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2),
-                0px 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .quiz_game.activeQuiz{
     z-index: 5;
@@ -188,7 +185,6 @@ body{
     align-items: center;
     justify-content: space-between;
     border-radius: 5px 5px 0 0;
-    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
     color: #fff;
 }
 .quiz_game header .quiz_header{
@@ -354,8 +350,6 @@ footer .next_question_btn:hover{
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
     pointer-events: none;
-    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2),
-                0px 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .end_game_result.activeEndGameResult{
     z-index: 5;
