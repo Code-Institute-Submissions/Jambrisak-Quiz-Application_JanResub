@@ -345,6 +345,12 @@ footer .next_question_btn:hover{
     box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2),
                 0px 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.end_game_result.activeEndGameResult{
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
 .end_game_result .end_game_result_icon{
     font-size:100px;
     color: #f9bc60;

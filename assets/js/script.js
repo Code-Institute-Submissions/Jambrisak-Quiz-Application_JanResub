@@ -7,6 +7,9 @@ const quiz_game = document.querySelector(".quiz_game");
 const next_question_btn = quiz_game.querySelector(".next_question_btn");
 const question_options_list = document.querySelector(".question_options_list");
 const question_time_count = document.querySelector(".quiz_timer_seconds");
+const end_game_result = document.querySelector(".end_game_result");
+const restart_game_button = end_game_result.querySelector(".buttons .restart_game");
+const quit_game_button = end_game_result.querySelector(".buttons .quit_game");
 
 //variables
 let total_questions = 0;
@@ -15,6 +18,7 @@ let correctIcon = '<div class="question_options_icon"><i class="fas fa-check"></
 let wrongIcon = '<div class="question_options_icon"><i class="fas fa-times"></i></div>';
 let questionTimeCounter;
 let quizGameTimeValue = 20;
+let playerScore = 0;
 //onclick to show modal_box
 btn_primary.onclick = () =>{
     modal_box.classList.add("activeInfo");
@@ -30,7 +34,6 @@ modal_start.onclick = () =>{
     fetchQuestions(0);
     questionCounter(1);
     quizTimeStart(quizGameTimeValue);
-    quizTimeGraphicStart(0);
 }
 //Fetching questions and options from array and showing them
 function fetchQuestions(index){
@@ -59,6 +62,7 @@ next_question_btn.onclick = () =>{
         next_question_btn.style.display = "none";
     }else{
         console.log("Questions completed");
+        showEndGameResult();
     }
 }
 //Question counter function
@@ -75,6 +79,8 @@ function questionsOptionSelected(correct_answer){
     let playerCorrectAnswer = questions[total_questions].correct_answer;
     let allQuestionOptions = question_options_list.children.length;
     if(playerAnswer == playerCorrectAnswer){
+        playerScore += 1;
+        console.log(playerScore);
         correct_answer.classList.add("correct_choice");
         console.log("Answer is the correct one");
         correct_answer.insertAdjacentHTML("beforeend", correctIcon);
@@ -111,3 +117,9 @@ function quizTimeStart(time){
     }
 }
 
+//End Game result function
+function showEndGameResult(){
+    modal_box.classList.remove("activeInfo");
+    quiz_game.classList.remove("activeQuiz");
+    end_game_result.classList.add("activeEndGameResult");
+}
