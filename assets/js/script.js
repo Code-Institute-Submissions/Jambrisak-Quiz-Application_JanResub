@@ -6,13 +6,14 @@ const modal_start = modal_box.querySelector(".modal_buttons .modal_start");
 const quiz_game = document.querySelector(".quiz_game");
 const next_question_btn = quiz_game.querySelector(".next_question_btn");
 const question_options_list = document.querySelector(".question_options_list");
-const question_time_count = document.querySelector(".quiz_game .quiz_timer_seconds");
+const question_time_count = document.querySelector(".quiz_timer_seconds");
+
 //variables
 let total_questions = 0;
 let questions_number = 1;
 let correctIcon = '<div class="question_options_icon"><i class="fas fa-check"></i></div>';
 let wrongIcon = '<div class="question_options_icon"><i class="fas fa-times"></i></div>';
-let timeCounter;
+let questionTimeCounter;
 let quizGameTimeValue = 20;
 //onclick to show modal_box
 btn_primary.onclick = () =>{
@@ -29,6 +30,7 @@ modal_start.onclick = () =>{
     fetchQuestions(0);
     questionCounter(1);
     quizTimeStart(quizGameTimeValue);
+    quizTimeGraphicStart(0);
 }
 //Fetching questions and options from array and showing them
 function fetchQuestions(index){
@@ -52,7 +54,7 @@ next_question_btn.onclick = () =>{
         questions_number++;
         fetchQuestions(total_questions);
         questionCounter(questions_number);
-        clearInterval(timeCounter);
+        clearInterval(questionTimeCounter);
         quizTimeStart(quizGameTimeValue);
     }else{
         console.log("Questions completed");
@@ -67,7 +69,7 @@ function questionCounter(index){
 
 //Question Option Selected function
 function questionsOptionSelected(correct_answer){
-    clearInterval(timeCounter);
+    clearInterval(questionTimeCounter);
     let playerAnswer = correct_answer.textContent;
     let playerCorrectAnswer = questions[total_questions].correct_answer;
     let allQuestionOptions = question_options_list.children.length;
@@ -95,11 +97,15 @@ function questionsOptionSelected(correct_answer){
 
 //Quiz Time function
 function quizTimeStart(time){
-    timeCounter = setInterval(timeStart, 1000);
+    questionTimeCounter = setInterval(timeStart, 1000);
     function timeStart(){
-        question_time_count.innerHTML = time;
+        question_time_count.textContent = time;
         time--;
-    }if(time > 0){
-        clearInterval(timeCounter);
+        if(time < 0){
+            clearInterval(questionTimeCounter);
+            question_time_count.textContent = "00";
+        }
     }
 }
+//Quiz Graphic decrease function
+
