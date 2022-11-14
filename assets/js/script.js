@@ -56,6 +56,7 @@ next_question_btn.onclick = () =>{
         questionCounter(questions_number);
         clearInterval(questionTimeCounter);
         quizTimeStart(quizGameTimeValue);
+        next_question_btn.style.display = "none";
     }else{
         console.log("Questions completed");
     }
@@ -93,6 +94,7 @@ function questionsOptionSelected(correct_answer){
     for (let i = 0; i < allQuestionOptions; i++){
         question_options_list.children[i].classList.add("disabled_choice");
     }
+    next_question_btn.style.display = "block";
 }
 
 //Quiz Time function
@@ -104,8 +106,8 @@ function quizTimeStart(time){
         if(time < 0){
             clearInterval(questionTimeCounter);
             question_time_count.textContent = "00";
+            next_question_btn.style.display = "block";
         }
     }
 }
-//Quiz Graphic decrease function
 

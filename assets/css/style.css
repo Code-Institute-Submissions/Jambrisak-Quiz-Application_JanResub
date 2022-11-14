@@ -184,13 +184,6 @@ body{
     border-radius: 5px 5px 0 0;
     box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
 }
-.quiz_game header .quiz_time_graphic{
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    height: 3px;
-    background: #001e1d;
-}
 .quiz_game header .quiz_header{
     font-size: 20px;
     font-weight: 600;
@@ -315,6 +308,7 @@ footer .total_questions_counter span p{
     padding-left: 0px;
 }
 footer .next_question_btn{
+    display: none;
     height: 40px;
     padding: 0 13px;
     font-size: 18px;
