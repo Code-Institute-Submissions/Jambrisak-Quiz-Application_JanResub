@@ -395,3 +395,22 @@ footer .next_question_btn:hover{
 .end_game_result .end_game_buttons .quit_game:hover{
     background: #f9bc60;
 }
+/*footer style*/
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background-color: #0f0e17;
+	height: 50px;
+	color: #f9bc60;
+}
+.footer .social-icons {
+	color: #f9bc60;
+	font-size: 2rem;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.footer .social-icons:hover {
+	color: #fff;
+}
