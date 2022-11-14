@@ -27,6 +27,7 @@ body{
     border-radius: 5px;
     background-color: #f9bc60;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 .btn_primary button:hover{
     cursor: pointer;
@@ -56,6 +57,8 @@ body{
     background: #f9bc60;
     border: none;
     color: #001e1d;
+    transform: translateY(0.4rem);
+    transition: transform 150ms;
 }
 /*Front Page styling*/
 .front_page_title{
@@ -71,7 +74,7 @@ body{
 .front_page_title h1{
     position: relative;
     font-size: 3.4rem;
-    color: #fffffe;
+    color: #fff;
     top: 40px;
     left: -100px;
 }
@@ -82,7 +85,7 @@ body{
     left: 51%;
     width: 540px;
     height: 320px;
-    background: #fff;
+    background: #004643;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
@@ -100,11 +103,12 @@ body{
     font-size: 20px;
     width: 100%;
     height: 60px;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid #004643;
     display: flex;
     align-items: center;
     padding: 0 30px;
     font-weight: 600;
+    color: #fff;
 }
 .modal_list {
     padding: 15px 35px;
@@ -112,10 +116,11 @@ body{
 .modal_info{
     margin: 5px 0;
     font-size: 17px;
+    color: #fff;
 }
 .modal_info span{
     font-weight: 600;
-    color: #001e1d;
+    color: #f9bc60;
 }
 /*modal button styling*/
 .modal_buttons{
@@ -124,7 +129,7 @@ body{
     align-items: center;
     justify-content: center;
     padding: 0 35px;
-    border-top: 1px solid lightgray;
+    border-top: 1px solid #004643;
 }
 .modal_buttons button{
     margin: 0 5px;
@@ -138,9 +143,9 @@ body{
     font-weight: 500;
 }
 .modal_buttons button.modal_quit{
-    border-color: #001e1d;
+    border-color: #fff;
     background: transparent;
-    color: #001e1d;
+    color: #fff;
 }
 .modal_buttons button.modal_quit:hover{
     background: #f9bc60;
@@ -157,7 +162,7 @@ body{
     top: 43%;
     left: 51%;
     width: 550px;
-    background: #fff;
+    background: #004643;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
@@ -177,12 +182,13 @@ body{
     z-index: 99;
     height: 70px;
     padding: 0 30px;
-    background: #fff;
+    background: #004643;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 5px 5px 0 0;
     box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
+    color: #fff;
 }
 .quiz_game header .quiz_header{
     font-size: 20px;
@@ -221,11 +227,12 @@ body{
 /*Quiz game section style*/
 .quiz_game section{
     padding: 25px 30px 20px 30px;
-    background: #fff;
+    background: #004643;
 }
 .quiz_game section .question_text{
     font-size: 25px;
     font-weight: 600;
+    color: #fff;
 }
 .quiz_game section .question_options_list{
     padding: 20px 0;
@@ -245,7 +252,7 @@ section .question_options_list .question_options{
     transition: all 0.3s ease;
 }
 section .question_options_list .question_options:hover{
-    background: transparent;
+    background: #fff;
 }
 .question_options_list .question_options:last-child{
     margin-bottom: 0px;
@@ -294,6 +301,7 @@ section .question_options_list .question_options:hover{
     display: flex;
     align-items: center;
     justify-content:space-between;
+    color: #fff;
 }
 .quiz_game footer .total_questions_counter span{
     display: flex;
@@ -302,6 +310,7 @@ section .question_options_list .question_options:hover{
 footer .total_questions_counter span p{
     font-weight: bolder;
     padding: 0 5px;
+    color: #f9bc60;
 
 }
 .total_questions_counter span p:first-child{
@@ -324,10 +333,12 @@ footer .next_question_btn{
 }
 footer .next_question_btn:hover{
     background: transparent;
+    border-color: #fff;
+    color: #fff;
 }
 /*End Game styles*/
 .end_game_result{
-    background: #fff;
+    background: #004643;
     width: 450px;
     padding: 25px 30px;
     border-radius: 5px;
@@ -359,16 +370,19 @@ footer .next_question_btn:hover{
 .end_game_result .end_game_result_text{
     font-size: 20px;
     font-weight: 500;
+    color: #fff;
 }
 .end_game_result .end_game_result_score_text span{
     display: flex;
     margin: 10px 0;
     font-size: 18px;
     font-weight: 500;
+    color: #fff;
 }
 .end_game_result .end_game_result_score_text span p{
     font-weight: 600;
     padding: 0 4px;
+    color: #f9bc60;
 }
 .end_game_result .end_game_buttons{
     display: flex;
@@ -391,9 +405,13 @@ footer .next_question_btn:hover{
 }
 .end_game_result .end_game_buttons .quit_game{
     background: transparent;
+    border-color: #fff;
+    color: #fff;
 }
 .end_game_result .end_game_buttons .quit_game:hover{
     background: #f9bc60;
+    border-color: #001e1d;
+    color: #001e1d;
 }
 /*footer style*/
 .footer {

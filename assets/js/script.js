@@ -1,5 +1,4 @@
 //Constants
-const btn_primary = document.querySelector(".btn_primary");
 const modal_box = document.querySelector(".modal_box");
 const modal_quit = modal_box.querySelector(".modal_buttons .modal_quit");
 const modal_start = modal_box.querySelector(".modal_buttons .modal_start");
@@ -10,6 +9,7 @@ const question_time_count = document.querySelector(".quiz_timer_seconds");
 const end_game_result = document.querySelector(".end_game_result");
 const restart_game_button = end_game_result.querySelector(".restart_game");
 const quit_game_button = end_game_result.querySelector(".buttons .quit_game");
+const btn_primary = document.querySelector(".btn_primary");
 
 //variables
 let total_questions = 0;
