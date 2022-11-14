@@ -20,7 +20,7 @@ let questionTimeCounter;
 let quizGameTimeValue = 20;
 let playerScore = 0;
 
-//onclick events for end game
+//onclick events for end game buttons
 
 //onclick to show modal_box
 btn_primary.onclick = () =>{
