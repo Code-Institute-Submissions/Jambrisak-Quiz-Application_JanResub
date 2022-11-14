@@ -150,6 +150,7 @@ body{
 .modal_buttons button.modal_quit:hover{
     background: #f9bc60;
     border-color: #f9bc60;
+    color: #001e1d;;
 }
 .modal_buttons button.modal_start{
     border-color: #f9bc60;
