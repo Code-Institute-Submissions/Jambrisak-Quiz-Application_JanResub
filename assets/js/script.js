@@ -8,7 +8,7 @@ const next_question_btn = quiz_game.querySelector(".next_question_btn");
 const question_options_list = document.querySelector(".question_options_list");
 const question_time_count = document.querySelector(".quiz_timer_seconds");
 const end_game_result = document.querySelector(".end_game_result");
-const restart_game_button = end_game_result.querySelector(".buttons .restart_game");
+const restart_game_button = end_game_result.querySelector(".restart_game");
 const quit_game_button = end_game_result.querySelector(".buttons .quit_game");
 
 //variables
@@ -19,6 +19,9 @@ let wrongIcon = '<div class="question_options_icon"><i class="fas fa-times"></i>
 let questionTimeCounter;
 let quizGameTimeValue = 20;
 let playerScore = 0;
+
+//onclick events for end game
+
 //onclick to show modal_box
 btn_primary.onclick = () =>{
     modal_box.classList.add("activeInfo");
@@ -122,4 +125,17 @@ function showEndGameResult(){
     modal_box.classList.remove("activeInfo");
     quiz_game.classList.remove("activeQuiz");
     end_game_result.classList.add("activeEndGameResult");
+    const end_game_score_text = end_game_result.querySelector(".end_game_result_score_text");
+    if(playerScore > 25){
+        let scoreText = '<span>and congrats, You got <p>'+ playerScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        end_game_score_text.innerHTML = scoreText;
+    }
+    else if(playerScore > 15){
+        let scoreText = '<span>and nice, You got <p>'+ playerScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        end_game_score_text.innerHTML = scoreText;
+    }
+    else{
+        let scoreText = '<span>and sorry, You got only <p>'+ playerScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        end_game_score_text.innerHTML = scoreText;
+    }
 }
