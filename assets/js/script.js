@@ -17,24 +17,36 @@ let correctIcon = '<div class="question_options_icon"><i class="fas fa-check"></
 let wrongIcon = '<div class="question_options_icon"><i class="fas fa-times"></i></div>';
 let questionTimeCounter;
 let quizGameTimeValue = 20;
-let playerScore = 0;
+var playerScore = 0;
 //onclick events for end game buttons
 quit_game_button.onclick = () =>{
     window.location.reload();
 }
 //onclick event for restart game button
 restart_game_button.onclick = ()=>{
-    quiz_game.classList.add("activeQuiz");
     end_game_result.classList.remove("activeEndGameResult");
+    quiz_game.classList.add("activeQuiz");
     let total_questions = 0;
     let questions_number = 1;
     let quizGameTimeValue = 20;
-    let playerScore = 0;
-    fetchQuestions(total_questions);
-    questionCounter(questions_number);
-    clearInterval(questionTimeCounter);
+    fetchQuestions(0);
+    questionCounter(1);
     quizTimeStart(quizGameTimeValue);
-    next_question_btn.style.display = "none";
+    next_question_btn.onclick = () =>{
+        if(total_questions < questions.length - 1){
+            total_questions++;
+            questions_number++;
+            fetchQuestions(total_questions);
+            questionCounter(questions_number);
+            clearInterval(questionTimeCounter);
+            quizTimeStart(quizGameTimeValue);
+            next_question_btn.style.display = "none";
+        }else{
+            console.log("Questions completed");
+            clearInterval(questionTimeCounter);
+            showEndGameResult();
+        }
+    }
 }
 //onclick to show modal_box
 btn_primary.onclick = () =>{
@@ -79,6 +91,7 @@ next_question_btn.onclick = () =>{
         next_question_btn.style.display = "none";
     }else{
         console.log("Questions completed");
+        clearInterval(questionTimeCounter);
         showEndGameResult();
     }
 }
@@ -127,9 +140,18 @@ function quizTimeStart(time){
         if(time < 0){
             clearInterval(questionTimeCounter);
             question_time_count.textContent = "00";
-            next_question_btn.style.display = "block";
-            question_options_list.children[i].setAttribute("class", "question_options correct_choice");
-            question_options_list.children[i].classList.add("disabled_choice");
+            let playerCorrectAnswer = questions[total_questions].correct_answer;
+            const allQuestionOptions = question_options_list.children.length;
+            for(let i = 0; i <allQuestionOptions; i++){
+                if(question_options_list.children[i].textContent == playerCorrectAnswer){
+                    question_options_list.children[i].setAttribute("class", "question_options correct_choice");
+                    question_options_list.children[i].insertAdjacentHTML("beforeend", correctIcon);
+                }
+            }
+            for (let i = 0; i < allQuestionOptions; i++){
+                question_options_list.children[i].classList.add("disabled_choice");
+            }
+            next_question_btn.style.display = "show";
         }
     }
 }

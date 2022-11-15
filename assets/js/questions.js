@@ -124,18 +124,18 @@ let questions = [
     {
         question_number: 12,
         the_question: "When did Canada leave the confederation to become their own nation?",
-        correct_answer: "1808",
+        correct_answer: "March 29th, 1982",
         question_options: [
             "July 1st, 1763",
-            "July 1st, 1867",
-            "July 1st, 1832",
-            "July 1st, 1902"
+            "March 29th, 1982",
+            "August 31st, 1832",
+            "November 2nd, 1902"
         ]
     },
     {
         question_number: 13,
         the_question: "When was the SS or Schutzstaffel established?",
-        correct_answer: "1808",
+        correct_answer: "April 4th, 1925",
         question_options: [
             "February 21st, 1926",
             "September 1st, 1941",
@@ -289,7 +289,7 @@ let questions = [
     {
         question_number: 27,
         the_question: "The Battle of Hastings was fought in which year?",
-        correct_answer: "Napoleone di Buonaparte",
+        correct_answer: "1066",
         question_options: [
             "911",
             "1204",
