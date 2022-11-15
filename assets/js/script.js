@@ -158,5 +158,5 @@ restart_game_button.onclick = ()=>{
     questionCounter(questions_number);
     clearInterval(questionTimeCounter);
     quizTimeStart(quizGameTimeValue);
-    next_question_btn.classList.remove("show");
+    next_question_btn.style.display = "none";
 }
