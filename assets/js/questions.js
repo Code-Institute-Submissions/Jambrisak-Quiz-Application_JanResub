@@ -1,6 +1,4 @@
 //Array for passing number, questions options and answers
-
-//variables
 let questions = [
     {
         question_number: 1,

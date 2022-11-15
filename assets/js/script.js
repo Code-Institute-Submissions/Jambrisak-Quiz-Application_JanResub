@@ -7,10 +7,9 @@ const next_question_btn = quiz_game.querySelector(".next_question_btn");
 const question_options_list = document.querySelector(".question_options_list");
 const question_time_count = document.querySelector(".quiz_timer_seconds");
 const end_game_result = document.querySelector(".end_game_result");
-const restart_game_button = end_game_result.querySelector(".restart_game");
-const quit_game_button = end_game_result.querySelector(".buttons .quit_game");
+const restart_game_button = end_game_result.querySelector(".end_game_buttons .restart_game");
+const quit_game_button = end_game_result.querySelector(".end_game_buttons .quit_game");
 const btn_primary = document.querySelector(".btn_primary");
-
 //variables
 let total_questions = 0;
 let questions_number = 1;
@@ -19,9 +18,24 @@ let wrongIcon = '<div class="question_options_icon"><i class="fas fa-times"></i>
 let questionTimeCounter;
 let quizGameTimeValue = 20;
 let playerScore = 0;
-
 //onclick events for end game buttons
-
+quit_game_button.onclick = () =>{
+    window.location.reload();
+}
+//onclick event for restart game button
+restart_game_button.onclick = ()=>{
+    quiz_game.classList.add("activeQuiz");
+    end_game_result.classList.remove("activeEndGameResult");
+    let total_questions = 0;
+    let questions_number = 1;
+    let quizGameTimeValue = 20;
+    let playerScore = 0;
+    fetchQuestions(total_questions);
+    questionCounter(questions_number);
+    clearInterval(questionTimeCounter);
+    quizTimeStart(quizGameTimeValue);
+    next_question_btn.style.display = "none";
+}
 //onclick to show modal_box
 btn_primary.onclick = () =>{
     modal_box.classList.add("activeInfo");
@@ -74,7 +88,6 @@ function questionCounter(index){
     let Question_Counter = '<span><p>'+ index +'</p>of<p>'+ questions.length +'</p>Questions</span';
     total_questions_counter.innerHTML = Question_Counter;
 }
-
 //Question Option Selected function
 function questionsOptionSelected(correct_answer){
     clearInterval(questionTimeCounter);
@@ -105,7 +118,6 @@ function questionsOptionSelected(correct_answer){
     }
     next_question_btn.style.display = "block";
 }
-
 //Quiz Time function
 function quizTimeStart(time){
     questionTimeCounter = setInterval(timeStart, 1000);
@@ -116,10 +128,11 @@ function quizTimeStart(time){
             clearInterval(questionTimeCounter);
             question_time_count.textContent = "00";
             next_question_btn.style.display = "block";
+            question_options_list.children[i].setAttribute("class", "question_options correct_choice");
+            question_options_list.children[i].classList.add("disabled_choice");
         }
     }
 }
-
 //End Game result function
 function showEndGameResult(){
     modal_box.classList.remove("activeInfo");
