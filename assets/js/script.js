@@ -112,7 +112,6 @@ function quizTimeStart(time){
         if(time < 0){
             clearInterval(questionTimeCounter);
             question_time_count.textContent = "00";
-            next_question_btn.style.display = "block";
             const allQuestionOptions = question_options_list.children.length;
             let playerCorrectAnswer = questions[total_questions].correct_answer;
             for(let i = 0; i <allQuestionOptions; i++){
