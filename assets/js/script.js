@@ -140,18 +140,20 @@ function quizTimeStart(time){
         if(time < 0){
             clearInterval(questionTimeCounter);
             question_time_count.textContent = "00";
+            next_question_btn.style.display = "show";
             let playerCorrectAnswer = questions[total_questions].correct_answer;
             const allQuestionOptions = question_options_list.children.length;
             for(let i = 0; i <allQuestionOptions; i++){
                 if(question_options_list.children[i].textContent == playerCorrectAnswer){
                     question_options_list.children[i].setAttribute("class", "question_options correct_choice");
                     question_options_list.children[i].insertAdjacentHTML("beforeend", correctIcon);
+                    next_question_btn.style.display = "show";
                 }
             }
             for (let i = 0; i < allQuestionOptions; i++){
                 question_options_list.children[i].classList.add("disabled_choice");
+                next_question_btn.style.display = "show";
             }
-            next_question_btn.style.display = "show";
         }
     }
 }

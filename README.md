@@ -2,9 +2,9 @@
 # A History Quiz Game - Javascript
 Developer: Philip Jambrisak
 
-![Multi Device Screenshot](assets/docs/AmIResponsive.png)
+![Multi Device Screenshot]()
 
-[View Live Website Here](https://jambrisak.github.io/My-JavaScript-Project/)
+[View Live Website Here](https://jambrisak.github.io/Quiz-Application/)
 
 This is A History Game created as Portfolio project #2 (JavaScript Essentials) for Diploma in Full Stack Software Development at [Code Institute](https://codeinstitute.net/se/full-stack-software-development-diploma/).
 It is an interactive front-end quiz app where user can test their knowledge about History. The application is easy to use for the user,
@@ -81,21 +81,22 @@ As a user I want to:
 Colour palette was selected using [Happy Hues](https://www.happyhues.co/) and has applied to the recomended UI elements.
 
 For best readability and clean look was #004643 used for the background of the quiz. The buttons was given the colour of #f9bc60
-and the text colour for the buttons was given #001e1d. For the headline the colour of ##fffffe was chosen because against the background,
-that colour was best because it stood out against that background.
+and the text colour for the buttons was given #001e1d. For the headline the colour of #fffffe was chosen because against the background,
+that colour was best because it stood out against that background. For when the user selects the correct option, the color to show that it was correct was given the colour of #23903c.
+And for showing when the user made the wrong selection of option, the colour of that option was #a4283a.
 
 When the user gets the right answer in the quiz the colour of #28a745 and when the answer is incorrect they are shown the colour #dc3545.
 ### Typography
-- The [Roboto](https://fonts.google.com/specimen/Roboto/tester) is the font used throughout the whole website with Sans-serif as the
+- The [Poppins](https://fonts.googleapis.com/css?family=Poppins:weight@200;300;400;500;600;700&display=swap) is the font used throughout the whole website with Sans-serif as the
 fallback. The Roboto font is clean, modern looking and it is easy to the eyes. It is sourced from [Google Fonts](https://fonts.google.com/)
 and it is imported in the CSS document via @import.
 
 ### Structure
 Wireframes
 I created Wireframes to help me visualize the design for the site and have a template to use when I started to build the site sections. 
-- Home page [view](assets/docs/wireframesHomePage.png) 
-- Game page [view](assets/docs/wireframesGamePage.png)
-- End Page  [view](assets/docs/wireframesEndPage.png)
+- Home page [view]() 
+- Game page [view]()
+- End Page  [view]()
 
 
 The page is designed in a very simple way. All pages shares the same colour palette and the content is located in the center of the screen.
@@ -112,30 +113,24 @@ The game page is designed to give clear information about what question the user
 It is also designed to give the user information about his/hers current score, and how many questions the user has answered.
 ![Game Page](assets/docs/GamePageDesign.png)
 
-### High Score Modal
-The highscore modal was designed to be a template for all other modals. 
-It details how previous users have scored. 
-This modal can be closed using its close button or by clicking an area outside of the element.
-![High Score](assets/docs/HighScoreModal.png)
-
 ### Heads Up Display
 The heads up display was designed to show how far along the user is with the quiz, and how many questions the user have answered.
 It was also designed to show current score.
-![Heads up display](assets/docs/HeadsUpDisplay.png)
+![Heads up display]()
 
 ### Questions
 The questions is randomly selected each time the user plays the game, and is shown between the choices and heads up display.
-![Questions](assets/docs/Questions.png)
+![Questions]()
 
 ### Visual feedback for correct and incorrect answer.
 The choices is designed to show when the user gets the correct choice or the incorrect choice. The buttons also have a hover effect to show the user which button their mouse is on.
-![Correct Answer](assets/docs/CorrectAnswer.png))
-![Incorrect Answer](assets/docs/IncorrectAnswer.png)
+![Correct Answer]()
+![Incorrect Answer]()
 
 ### Score page
 When the quiz ends, the score of the game shows up and the user will be prompted to save the score and his/hers username.
 The user also have a choice to play the quiz again or go back to the home page.
-![End page](assets/docs/EndPageDesign.png)
+![End page]()
 
 ### Future Development
 - Utilise more features of the API
@@ -190,40 +185,26 @@ The following Visual Studio Code extensions were utilized in the production of t
 ## Testing
 
 ### Performance
-[Lighthouse](https://app.prntscr.com/en/index.html) - Google webdev tool used for performance testing showing near-maximum score.
+[Lighthouse]() - Google webdev tool used for performance testing showing near-maximum score.
 - Desktop
-![Desktop](assets/docs/DesktopScore.png)
+![Desktop]()
 - Mobile
-![Mobile](assets/docs/MobileScore.png)
+![Mobile]()
 
 
 ### Validation
 #### HTML5
-- [W3c Markup Validator](https://validator.w3.org/#validate_by_upload+with_options) - Validation service used.
-#### index.html
+- [W3c Markup Validator]() - Validation service used.
+#### A History Quiz
 In the Index.html no faults were shown and the HTMl code were green.
-![Index.html](assets/docs/IndexW3CHtml.png)
-#### game.html
-In the Game.Html some faults were shown and i can explain why they are no faults in the real sense.
-- Error: Duplicate ID hud-item. This shows up because im using two hud-item id's. And that's because Im dividing up the hud in two parts.
-- Warning: The first occurrence of ID hud-item was here. - Same as above.
-- Warning: Empty heading. Its sayin that my h2 tag is empy which it is because thats the part i fill in with questions from my JS.
-![Game.html](assets/docs/GamePageW3CHtml.png)
-#### end.html
-In the End.html some faults are also shown and as I can with game.html I can also explain theese faults.
-- Warning: Empty heading. It shows that for my h1 final score tag, that its empty which is true. But this tag takes the info from JS about the users score and shows it here.
-- Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values. This I will have fixed by the time this is shown. But incase its still there I will let you see the error.
-- Error: Attribute href not allowed on element button at this point. I get two of theese, and it tells me that the button can't have an href attritbute. But that's somthing no one says on the internet, because alot of people use buttons to go to a diffrent page or section.
-![End.html](assets/docs/EndPageW3CHtml.png)
+![Index.html]()
+
 
 #### CSS3
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_upload) - Validation service used.
-#### app.css
+#### style.css
 In the W3C CSS validator check for app.css no faults are detected.
-![App.css](assets/docs/AppCSSChecker.png)
-#### game.css
-In the W3C CSS validator check for game.css no faults are detected.
-![Game.css](assets7docs/GameCssChecker.png)
+![style.css]()
 
 #### JavaScript ES6
 [JS Hint](https://jshint.com/)
@@ -256,12 +237,7 @@ Website was tested manually on:
 The results were satisfactory and proved good responsiveness on all screen sizes.
 
 ### Bugs
-I only encountered one bug when the site was around 70% built and it was the linkes between pages, after multiple tries I could
-sort it out and found out that the page, has a problem when the user is using an adblocker. 
-After trying out a different adblockers I found out that the only adblocker that made the site not work was this.
-[AdBlock](https://chrome.google.com/webstore/detail/adblock-%E2%80%94-best-ad-blocker/gighmmpiobklfepjocnamgkkbiglidom)
-I could not find a way around this and therefore I recommend users to disable this adblocker or choose a different one.
-
+I encounterd a problem when finishing the application when I was working on my restart button. It only did a partial reset, meaning that the application did not reset the player score or the correct / wrong answer. 
 
 ### Responsiveness
 I confirmed that this website is responsive and all the functions are displayed correctly.
@@ -325,58 +301,13 @@ image
 > remote: Total 10 (delta 1), reused 10 (delta 1)
 > Unpacking objects: 100% (10/10), done.
 ```
-## Deployment
-The project was deployed to GitHub Pages using the following steps:
-- Log in to GitHub and locate the [quiz-game]() repository.
-- Locate the "Settings" button on the menu.
-- Scroll down the settings page until you locate "Pages" in "code and automation" section.
-- Under "Source", click the dropdown called "Select branch:" and select "Main", clickt he dropdown called "Select folder" and select "/root".
-- The page will automatically refresh and you receive message "Your site is published at ["https://jambrisak.github.io/My-JavaScript-Project/"]().
-Result is below.
 
-### Fork
-If you want to fork this project with the intent to propose changes to the developer. It's good practive to regularly sync your fork with the original repository.
-To do this, you'll need to use Git on the command line. 
-- On GitHub.com, navigate to the [https://github.com/Jambrisak/My-JavaScript-Project](https://github.com/Jambrisak/My-JavaScript-Project) repository.
-- In the top-right corner of the page, click **Fork**.
-image
-- Select an owner for the forked repository.
-image
-- By default, forks are named the same as their parent repositories. You can change the name of the fork to distinguish it further.
-image
-- Optionally, add a description of your fork.
-image
-- Choose wheter to copy only the default branch or all branches to the new fork. For many forking scenarios, such as contributing to open source projects, you only need to copy the default branch. By default only the default branch is copied.
-image
-- Click **Create fork**
-image
-
-#### Cloning your forked repository
-Right now, you have a fork of the My-JavaScript-Project repository, but you do not have the files in that repository locally on your computer.
-- On Github.Com, navigate to your fork of the My-JavaScript-Project repository.
-- Above the list of files, click **Code**.
-image
-- Copy the URL for the repository.
-    - To clone the repository using HTTPS, under "HTTPS".
-    - To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click SSH.
-    - To clone a repository using GitHub CLI, click GitHub CLi.
-- Open Git Bash.
-- Change the current working directory to the location where you want the cloned directory.
-- Type git `git clone`, and then paste the URL you copied earlier. It will look like this, with your GitHub username instead of `YOUR-USERNAME`: 
-```$ git clone https://github.com/YOUR-USERNAME/My_JavaScript_Project```
-- Press **Enter**. Your local clone will be created.
-```$ git clone https://github.com/YOUR-USERNAME/Spoon-Knife
-> Cloning into `Spoon-Knife`...
-> remote: Counting objects: 10, done.
-> remote: Compressing objects: 100% (8/8), done.
-> remote: Total 10 (delta 1), reused 10 (delta 1)
-> Unpacking objects: 100% (10/10), done.
-```
 ## Credits
 ### Learning resources
 - [Code Institute](https://codeinstitute.net/se/full-stack-software-development-diploma/?utm_term=code%20institute&utm_campaign=CI+-+SWE+-+Search+-+Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=8983321581&hsa_cam=14660337051&hsa_grp=134087657984&hsa_ad=581817633086&hsa_src=g&hsa_tgt=aud-594467886660:kwd-319867646331&hsa_kw=code%20institute&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjwzNOaBhAcEiwAD7Tb6N3WGiztlBSEN8Er4wdekcvAJ_KwB8GUz1PJfQssgnTLnMNScuTcghoC8-UQAvD_BwE) - The JavaScript section and walthrough project helped me alot in getting the knowledge needed.
 - [W3C School](https://www.w3schools.com/) - When Code Institute could not give me the answer.
 - [JavaScript and JQuery: Interactive Front-End Web Development by Jon Duckett](https://www.adlibris.com/se/bok/javascript-jquery---interactive-front-end-web-development-9781118871652) - When I needed to repeat or just see whatelse I could try when I was stuck.
+- [GitHub Docs](https://docs.github.com/en/get-started/quickstart/fork-a-repo) was used when making the ### Fork section and ### Cloning your forked repository, the pictures and code is taken directly from there.
 
 ### Acknowledgements
 - My mentor Maranatha Ilesanmi for helpful feedback and guidance at all stages of the project.
