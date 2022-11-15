@@ -22,32 +22,6 @@ var playerScore = 0;
 quit_game_button.onclick = () =>{
     window.location.reload();
 }
-//onclick event for restart game button
-restart_game_button.onclick = ()=>{
-    end_game_result.classList.remove("activeEndGameResult");
-    quiz_game.classList.add("activeQuiz");
-    let total_questions = 0;
-    let questions_number = 1;
-    let quizGameTimeValue = 20;
-    fetchQuestions(0);
-    questionCounter(1);
-    quizTimeStart(quizGameTimeValue);
-    next_question_btn.onclick = () =>{
-        if(total_questions < questions.length - 1){
-            total_questions++;
-            questions_number++;
-            fetchQuestions(total_questions);
-            questionCounter(questions_number);
-            clearInterval(questionTimeCounter);
-            quizTimeStart(quizGameTimeValue);
-            next_question_btn.style.display = "none";
-        }else{
-            console.log("Questions completed");
-            clearInterval(questionTimeCounter);
-            showEndGameResult();
-        }
-    }
-}
 //onclick to show modal_box
 btn_primary.onclick = () =>{
     modal_box.classList.add("activeInfo");
@@ -117,12 +91,10 @@ function questionsOptionSelected(correct_answer){
         correct_answer.classList.add("incorrect_choice");
         console.log("Answer is the wrong one");
         correct_answer.insertAdjacentHTML("beforeend", wrongIcon);
-
         for(let i = 0; i <allQuestionOptions; i++){
             if(question_options_list.children[i].textContent == playerCorrectAnswer){
                 question_options_list.children[i].setAttribute("class", "question_options correct_choice");
                 question_options_list.children[i].insertAdjacentHTML("beforeend", correctIcon);
-                
             }
         }
     }
@@ -140,19 +112,17 @@ function quizTimeStart(time){
         if(time < 0){
             clearInterval(questionTimeCounter);
             question_time_count.textContent = "00";
-            next_question_btn.style.display = "show";
-            let playerCorrectAnswer = questions[total_questions].correct_answer;
+            next_question_btn.style.display = "block";
             const allQuestionOptions = question_options_list.children.length;
+            let playerCorrectAnswer = questions[total_questions].correct_answer;
             for(let i = 0; i <allQuestionOptions; i++){
                 if(question_options_list.children[i].textContent == playerCorrectAnswer){
                     question_options_list.children[i].setAttribute("class", "question_options correct_choice");
                     question_options_list.children[i].insertAdjacentHTML("beforeend", correctIcon);
-                    next_question_btn.style.display = "show";
                 }
             }
             for (let i = 0; i < allQuestionOptions; i++){
                 question_options_list.children[i].classList.add("disabled_choice");
-                next_question_btn.style.display = "show";
             }
         }
     }
@@ -175,4 +145,18 @@ function showEndGameResult(){
         let scoreText = '<span>and sorry, You got only <p>'+ playerScore +'</p> out of <p>'+ questions.length +'</p></span>';
         end_game_score_text.innerHTML = scoreText;
     }
+}
+//onclick event for restart game button
+restart_game_button.onclick = ()=>{
+    quiz_game.classList.add("activeQuiz");
+    end_game_result.classList.remove("activeEndGameResult");
+    total_questions = 0;
+    questions_number = 1;
+    quizGameTimeValue = 20;
+    playerScore = 0;
+    fetchQuestions(total_questions);
+    questionCounter(questions_number);
+    clearInterval(questionTimeCounter);
+    quizTimeStart(quizGameTimeValue);
+    next_question_btn.classList.remove("show");
 }
