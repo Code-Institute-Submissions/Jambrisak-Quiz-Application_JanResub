@@ -44,9 +44,7 @@ engage with data, alter the way the site displays the information to achieve the
 
 ## Project
 ### Strategy/Scope
-A History Game Quiz Game is an entertainment app intended for users who wanna test their History knowledge. 
-The quiz contains questions with various difficulty level, that encourages user to replay the game if he/she doesn't achieve maximum
-score in the first run.
+A History Game Quiz Game is an entertainment app intended for users who wanna test their History knowledge. The game contains the same questions, hard questions that will even stomp a history teacher. The game is aimed for testing your knowledge of world history and hopefully teaching you something you did not know.
 
 The content is presented on a single page that interactively changes content depending on the users actions. The **primary goal**
 is to entertain the user during the game. The **secondary objective** is to improve the users knowledge about History. With this in mind,
@@ -61,9 +59,10 @@ To achieve the strategy goals I implemented following features:
 
 ### Site owner goals
 - Provide entertaining and an interactive experience for the users.
-- Provide a game app with questions with various difficulty level.
+- Provide a game app with questions with a high difficulty level.
 - Provide a link to linkedin and the project's GitHub repository, to interest users in the project and to obtain new followers.
 - To provide a website that looks well across a range of devices and screen sizes.
+- To provide an application that challenges the user with a set time per question.
 
 ### User goals
 As a user I want to:
@@ -73,7 +72,6 @@ As a user I want to:
 - Receive feedback for given answers.
 - Learn something new about History.
 - Enjoy the game.
-- See my score after I answer the last question.
 - Be able to re-play the game without using "back" button in the browser.
 - Follow the developer in social media.
 ## User Experience (UX/UI)
@@ -115,7 +113,7 @@ It is also designed to give the user information about his/hers current score, a
 
 ### Heads Up Display
 The heads up display was designed to show how far along the user is with the quiz, and how many questions the user have answered.
-It was also designed to show current score.
+It was also designed to show current score. And to also show how much time left there is to answer the question.
 ![Heads up display]()
 
 ### Questions
@@ -184,14 +182,12 @@ The following Visual Studio Code extensions were utilized in the production of t
 - Mobile
 ![Mobile]()
 
-
 ### Validation
 #### HTML5
 - [W3c Markup Validator]() - Validation service used.
 #### A History Quiz
 In the Index.html no faults were shown and the HTMl code were green.
 ![Index.html]()
-
 
 #### CSS3
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_upload) - Validation service used.
@@ -246,7 +242,6 @@ I confirmed that this website is responsive and all the functions are displayed 
 I asked my friends and fellow CI students to test the application and I received a lot of positive feedback, one issue was noticed
 and it was that the text for questions and answers displayed some bugs.
 Thanks to the feedback I implemented a new DB that shows no bugs in the text for either the questions or answers.
-
 
 ## Deployment
 The project was deployed to GitHub Pages using the following steps:
@@ -304,7 +299,7 @@ image
 - [GitHub Docs](https://docs.github.com/en/get-started/quickstart/fork-a-repo) was used when making the ### Fork section and ### Cloning your forked repository, the pictures and code is taken directly from there.
 - [ianmeigh](https://github.com/ianmeigh/category-quiz) - His repo on how he did his category quiz helped me mainly with how he managed to do it all on one single page. 
 - [Stackoverflow](https://stackoverflow.com/questions/15744736/stop-timer-in-the-middle-of-the-tick) - I used this site alot to help with fixing and figuring out how to achieve certain things, for instance how to fix the timer ticking down I used this to help me figuring out what I did wrong.
-
+- [Udemy](https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/22649531?start=375#overview) - I have been doing this course over at Udemy, and it helped me along very well especially his Chapter(Section) 10 - 12.
 ### Acknowledgements
 - My mentor Maranatha Ilesanmi for helpful feedback and guidance at all stages of the project.
 - Niclas Tanskanen for being an amazing bouncing idea partner and an amazing tester.
