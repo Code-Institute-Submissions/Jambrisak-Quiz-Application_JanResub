@@ -277,7 +277,7 @@ let questions = [
     },
     {
         question_number: 26,
-        the_question: "What was found in 1946 by two young shepards near a cave?",
+        the_question: "What was found in 1946 by two young shepherds near a cave?",
         correct_answer: "Dead Sea Scrolls",
         question_options: [
             "The Blackbeard Chest",
