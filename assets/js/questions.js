@@ -1,4 +1,4 @@
-//Array for passing number, questions options and answers
+//Array for passing number, questions options and answers to script.js
 let questions = [
     {
         question_number: 1,
