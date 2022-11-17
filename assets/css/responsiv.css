@@ -172,40 +172,47 @@
 { 
     .front_page_title img
     {
-        left: -100px;
+        left: 10px;
     }
     .front_page_title h1
     {
         font-size: 1.8rem;
-        left: -160px;
+        left: -50px;
         top: 60px;
     }
     .btn_primary
     {
-        left: 305px;
-        top: 410px;
+        left: 405px;
+        top: 440px;
     }
     .btn_tertiary
     {
-        left: 305px;
-        top: 480px;
+        left: 405px;
+        top: 510px;
     }
     .modal_box
     {
         top: 41%;
         height: 41%;
-        left: 40%;
+        left: 60%;
+    }
+    .modal_buttons
+    {
+        position: relative;
+        left: -13%;
     }
     .modal_info
     {
-        font-size: 12px;
+        position: relative;
+        font-size: 17px;
+        left: -30px;
     }
     .quiz_game
     {
         top: 32%;
-        height: 50%;
-        width: 70%;
-        left: 35%;
+        height: 30%;
+        width: 100%;
+        left: 50%;
     }
     .quiz_game header
     {
@@ -219,11 +226,11 @@
     }
     .quiz_game section .question_text
     {
-        font-size: 15px;
+        font-size: 25px;
     }
     section .question_options_list .question_options
     {
-        font-size: 10px;
+        font-size: 15px;
     }
     .quiz_game footer
     {
@@ -233,12 +240,12 @@
     }
     footer .next_question_btn
     {
-        font-size: 10px;
+        font-size: 15px;
     }
     .end_game_result
     {
         top: 42%;
-        left: 34%;
+        left: 54%;
     }
 }
 @media screen and (min-width: 600px) and (max-width: 700px) 
@@ -475,18 +482,19 @@
     }
     .btn_primary
     {
-        left: 170px;
-        top: 330px;
+        left: 180px;
+        top: 280px;
     }
     .btn_tertiary
     {
-        left: 170px;
-        top: 440px;
+        left: 180px;
+        top: 380px;
     }
     .modal_box
     {
         top: 50%;
-        height: 60%;
+        left: 60%;
+        height: 80%;
     }
     .modal_title
     {
@@ -502,17 +510,23 @@
     }
     .quiz_game
     {
-        top: 405px;
+        top: 255px;
         height: 100%;
         width: 100%;
     }
     .quiz_game section .question_text
     {
-        font-size: 20px;
+        font-size: 15px;
     }
     section .question_options_list .question_options
     {
-        font-size: 15px;
+        font-size: 10px;
+    }
+    .quiz_game footer
+    {
+        position: relative;
+        height: 30%;
+        top: -40px;
     }
     footer .next_question_btn
     {
@@ -520,10 +534,15 @@
     }
     .end_game_result
     {
-        top: 48%;
+        top: 59%;
+        height: 400px;
     }
     .end_game_result .end_game_result_score_text span
     {
         font-size: 16px;
+    }
+    .footer {
+        width: 100%;
+        left: -80px;
     }
 }
