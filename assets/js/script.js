@@ -129,6 +129,13 @@ function quizTimeStart(time)
     {
         question_time_count.textContent = time;
         time--;
+        if(time >= 17)
+        {
+            for (let i = 0; i < allQuestionOptions; i++)
+            {
+                question_options_list.children[i].classList.add("disabled_choice");
+            }
+        }
         if(time < 0)
         {
             clearInterval(questionTimeCounter);
