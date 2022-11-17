@@ -1,4 +1,52 @@
 /*Responsive*/
+@media screen and (min-width: 1600px) and (max-width: 1600px) 
+{
+    .btn_primary
+    {
+        left: 805px;
+        top: 450px;
+    }
+    .btn_tertiary
+    {
+        left: 805px;
+        top: 530px;
+    }
+    .modal_box
+    {
+        top: 47%;
+        height: 41%;
+        left: 50%;
+    }
+    .end_game_result
+    {
+        top: 44%;
+        left: 52%;
+    }
+}
+@media screen and (min-width: 1280px) and (max-width: 1280px) 
+{
+    .btn_primary
+    {
+        left: 665px;
+        top: 430px;
+    }
+    .btn_tertiary
+    {
+        left: 665px;
+        top: 510px;
+    }
+    .modal_box
+    {
+        top: 47%;
+        height: 41%;
+        left: 50%;
+    }
+    .end_game_result
+    {
+        top: 44%;
+        left: 52%;
+    }
+}
 @media screen and (min-width: 800px) and (max-width: 900px) 
 { 
     .front_page_title img
