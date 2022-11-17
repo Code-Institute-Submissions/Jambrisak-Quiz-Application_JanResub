@@ -2,7 +2,7 @@
 # A History Quiz Game - Javascript
 Developer: Philip Jambrisak
 
-![Multi Device Screenshot]()
+![Multi Device Screenshot](assets/docs/Am_I_Responsive.png)
 
 [View Live Website Here](https://jambrisak.github.io/Quiz-Application/)
 
