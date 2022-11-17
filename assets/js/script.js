@@ -1,6 +1,6 @@
 //Constants
-const modal_box = document.querySelector(".modal_box");
-const modal_quit = modal_box.querySelector(".modal_buttons .modal_quit");
+var modal_box = document.querySelector(".modal_box");
+var modal_quit = modal_box.querySelector(".modal_buttons .modal_quit");
 const modal_start = modal_box.querySelector(".modal_buttons .modal_start");
 const quiz_game = document.querySelector(".quiz_game");
 const next_question_btn = quiz_game.querySelector(".next_question_btn");
@@ -22,17 +22,17 @@ var playerScore = 0;
 quit_game_button.onclick = () =>
 {
     window.location.reload();
-}
+};
 //onclick to show modal_box
 btn_primary.onclick = () =>
 {
     modal_box.classList.add("activeInfo");
-}
+};
 //Onclick to hide modal_box
 modal_quit.onclick = () =>
 {
     modal_box.classList.remove("activeInfo");
-}
+};
 //Onclick to hide modal_box and show quiz_game
 modal_start.onclick = () =>
 {
@@ -41,7 +41,7 @@ modal_start.onclick = () =>
     fetchQuestions(0);
     questionCounter(1);
     quizTimeStart(quizGameTimeValue);
-}
+};
 //Fetching questions and options from array and showing them
 function fetchQuestions(index)
 {
@@ -78,7 +78,7 @@ next_question_btn.onclick = () =>
         clearInterval(questionTimeCounter);
         showEndGameResult();
     }
-}
+};
 //Question counter function
 function questionCounter(index)
 {
@@ -131,10 +131,7 @@ function quizTimeStart(time)
         time--;
         if(time >= 17)
         {
-            for (let i = 0; i < allQuestionOptions; i++)
-            {
-                question_options_list.children[i].classList.add("disabled_choice");
-            }
+            question_options_list.children[i].classList.add("disabled_choice");
         }
         if(time < 0)
         {
@@ -193,4 +190,4 @@ restart_game_button.onclick = ()=>{
     clearInterval(questionTimeCounter);
     quizTimeStart(quizGameTimeValue);
     next_question_btn.style.display = "none";
-}
+};

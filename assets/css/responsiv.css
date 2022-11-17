@@ -1,4 +1,28 @@
 /*Responsive*/
+@media screen and (min-width: 1920px) and (max-width: 1920px)
+{
+    .btn_primary
+    {
+        left: 950px;
+        top: 450px;
+    }
+    .btn_tertiary
+    {
+        left: 950px;
+        top: 530px;
+    }
+    .end_game_result
+    {
+        top: 44%;
+        left: 51%;
+    }
+    .modal_box
+    {
+        top: 47%;
+        height: 41%;
+        left: 50%;
+    }
+}
 @media screen and (min-width: 1600px) and (max-width: 1600px) 
 {
     .btn_primary

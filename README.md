@@ -92,9 +92,10 @@ and it is imported in the CSS document via @import.
 ### Structure
 Wireframes
 I created Wireframes to help me visualize the design for the site and have a template to use when I started to build the site sections. 
-- Home page [view]() 
-- Game page [view]()
-- End Page  [view]()
+- Home page [view](assets/docs/Home_Page_Wireframes.png) 
+- Rules Page [view](assets/docs/Rule_Page_Wireframes.png)
+- Game Page  [view](assets/docs/Game_Page_Wireframes.png)
+- End Page [view](assets/docs/End_Page_Wireframes.png)
 
 
 The page is designed in a very simple way. All pages shares the same color palette and the content is located in the center of the screen.
@@ -104,31 +105,33 @@ The content is changed dynamically by JavaScript.
 The main menu was designed to provide an introduction to the application via an attractive logo and heading. 
 All menu options are presented in this element with the Play button allowing new visitors to start a quiz immediately. But not before being shown the rules for the quiz. 
 There is also a button that will take you back to my portfolio website.
-![Home page](assets/docs/HomePageDesign.png)
+![Home page](assets/docs/Home_Page.png)
+
+### Rules page
+When the user clicks the play button, the rules page is displayed and the user is prompted to read the rules. After the user has read the rules, the user can then start the quiz. 
+![Rules Page](assets/docs/Rules_Page.png)
 
 ### Game page
 The game page is designed to give clear information about what question the user is answering, and which are the choices.
 It is also designed to give the user information about his/hers current score, and how many questions the user has answered.
-![Game Page](assets/docs/GamePageDesign.png)
+![Game Page](assets/docs/Game_Page.png)
 
 ### Heads Up Display
-The heads up display was designed to show how far along the user is with the quiz, and how many questions the user have answered.
-It was also designed to show current score. And to also show how much time left there is to answer the question.
-![Heads up display]()
+The heads up display displayes the title of the quiz and also the timer and shows the user how much time he/her have left in the quiz.
+![Heads up display](assets/docs/Heads_Up_Display.png)
 
 ### Questions
-The questions is randomly selected each time the user plays the game, and is shown between the choices and heads up display.
-![Questions]()
+The user will have 30 questions to do and they will all display, question number and then the question itself.
+![Questions](assets/docs/Game_Page.png)
 
 ### Visual feedback for correct and incorrect answer.
 The choices is designed to show when the user gets the correct choice or the incorrect choice. The buttons also have a hover effect to show the user which button their mouse is on.
-![Correct Answer]()
-![Incorrect Answer]()
+![Correct Answer And Incorrect Answer](assets/docs/Correct_Incorrect_Answers.png)
 
 ### Score page
-When the quiz ends, the score of the game shows up and the user will be prompted to save the score and his/hers username.
+When the quiz ends, the score of the game shows up.
 The user also have a choice to play the quiz again or go back to the home page.
-![End page]()
+![End page](assets/docs/End_Page.png)
 
 ### Future Development
 - Utilize more features of the API
@@ -176,28 +179,32 @@ The following Visual Studio Code extensions were utilized in the production of t
 ## Testing
 
 ### Performance
-[Lighthouse]() - Google webdev tool used for performance testing showing near-maximum score.
+[Lighthouse](https://web.dev/measure/?gclid=CjwKCAjwzNOaBhAcEiwAD7Tb6HRAAz5BpsJHUTZjbUjVem1pf9IRxhdD_eaBsI6zUzFgKYOPNUNYnhoCbuoQAvD_BwE) - Google webdev tool used for performance testing showing near-maximum score.
 - Desktop
-![Desktop]()
+![Desktop](assets/docs/Desktop_Lighthouse.png)
 - Mobile
-![Mobile]()
+![Mobile](assets/docs/Mobile_Lighthouse.png)
 
 ### Validation
 #### HTML5
-- [W3c Markup Validator]() - Validation service used.
+- [W3c Markup Validator](https://validator.w3.org/) - Validation service used.
 #### A History Quiz
 In the Index.html no faults were shown and the HTMl code were green.
-![Index.html]()
+![Index.html](assets/docs/W3C_Validator.png)
 
 #### CSS3
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_upload) - Validation service used.
 #### style.css
 In the W3C CSS validator check for app.css no faults are detected.
-![style.css]()
+![style.css](assets/docs/Css_validator_1.png)
 
 #### JavaScript ES6
 [JS Hint](https://jshint.com/)
-- No warning or errors reported using the VSCode extension.
+- JSHint shows 45 warnings and are warnings about the use of const
+"Const is available in ES6 (use esversion: 6) or Mozilla JS extension (use moz)."
+"let is available in ES6 (use esversion: 6) or Mozilla JS extension (use moz)".
+"'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6')."
+- After a deep research i found out that you are allowed to use const and let for instance, and that the arrow function is allowed theese errors seem to only stem from JS Hint.
 - No warning or errors reported using JSHint website when using the following parameters (entered at the top of the code section):
 ```// Use ECMAScript 8 
 //jshint esversion:8
@@ -228,15 +235,7 @@ The results were satisfactory and proved good responsiveness on all screen sizes
 ### Bugs
 I encountered a problem when finishing the application when I was working on my restart button. It only did a partial reset, meaning that the application did not reset the player score or the correct / wrong answer.
 Another bug i encountered and solved was the issue with next question button not working properly. It is now fixed thanks to some stackoverflow searching.
-
-### Responsiveness
-I confirmed that this website is responsive and all the functions are displayed correctly.
-#### 320px
-#### 568px
-#### 768px
-#### 1024px
-#### 1920px
-#### 2560px
+- There is one active bug: The timer is slow to start and wont start immediately you will have to wait a few seconds before it starts. I have tried fixing this but cant figure out how to do it.
 
 ### Per review
 I asked my friends and fellow CI students to test the application and I received a lot of positive feedback, one issue was noticed
