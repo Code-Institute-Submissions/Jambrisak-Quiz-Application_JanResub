@@ -195,8 +195,10 @@ In the Index.html no faults were shown and the HTMl code were green.
 #### CSS3
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_upload) - Validation service used.
 #### style.css
-In the W3C CSS validator check for app.css no faults are detected.
+In the W3C CSS validator check for app.css 5 errors 1 has been addressed, and the other 4 is not understood by the 
+creater why they are showing up as an error.
 ![style.css](assets/docs/Css_validator_1.png)
+![Style_css_errors](assets/docs/Style_css_errors_Lighthouse.png)
 
 #### JavaScript ES6
 [JS Hint](https://jshint.com/)
