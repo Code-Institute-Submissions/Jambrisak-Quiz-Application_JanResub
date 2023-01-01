@@ -236,8 +236,11 @@ Website was tested manually on:
 - 1920 x 1080 (Normal Monitor Size) //The creators 2nd monitor
 - 1600 x 890  (Desktop) //Found at amiresponsive.com
 - 1280 x 802  (Laptop) //Found at amiresponsive.com
+- 820 x 1180  (Ipad Air) //Found in Chrome Dev Tools
 - 768 x 1024  (Tablet) //Found at amiresponsive.com
+- 414 x 896   (Iphone XR) ////Found in Chrome Dev Tools
 - 390 x 844   (Iphone 12 pro) //Found at amiresponsive.com
+- 375 x 667   (Iphone SE) //Found in Chrome Dev Tools
 - 320 x 480   (Smaller Mobile) //Found in Chrome Dev Tools
 
 ### Bugs

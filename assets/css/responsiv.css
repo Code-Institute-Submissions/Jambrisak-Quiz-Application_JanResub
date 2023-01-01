@@ -140,6 +140,42 @@
         top: 400px;
     }
 }
+@media screen and (max-width: 820px) and (max-height: 1180px){
+    .front_page_title{
+        width: 768px;
+        left: 320px;
+    }
+    .btn_primary
+    {
+        width: 768px;
+        left: 720px;
+        top: 500px;
+    }
+    .btn_tertiary
+    {
+        width: 768px;
+        left: 695px;
+        top: 560px;
+    }
+    .modal_box
+    {
+        width: 768px;
+        left: 500px;
+        top: 440px;
+    }
+    .quiz_game
+    {
+        width: 768px;
+        left: 400px;
+        top: 390px;
+    }
+    .end_game_result
+    {
+        width: 768px;
+        left: 425px;
+        top: 420px;
+    }
+}
 @media screen and (max-width: 768px) and (max-height: 1024px){
     .front_page_title{
         width: 768px;
@@ -213,6 +249,112 @@
         width: 390px;
         left: 200px;
         top: 400px;
+    }
+}
+@media screen and (max-width: 414px) and (max-height: 896px){
+    .front_page_title{
+        width: 320px;
+        left: 150px;
+    }
+    .front_page_title img{
+        left: 10px;
+    }
+    .front_page_title h1{
+        font-size: 2.4rem;
+        left: -80px;
+    }
+    .btn_primary
+    {
+        width: 320px;
+        left: 280px;
+        top: 390px;
+    }
+    .btn_tertiary
+    {
+        width: 375px;
+        left: 290px;
+        top: 460px;
+    }
+    .modal_box
+    {
+        width: 414px;
+        left: 160px;
+        top: 330px;
+    }
+    .quiz_game
+    {
+        width: 414px;
+        left: 200px;
+        top: 320px;
+    }
+    .end_game_result
+    {
+        width: 320px;
+        left: 220px;
+        top: 350px;
+    }
+    .end_game_result .end_game_result_text{
+        font-size: 15px;
+    }
+    .end_game_result .end_game_result_score_text span{
+        font-size: 10px;
+    }
+    .end_game_result .end_game_buttons button{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 375px) and (max-height: 667px){
+    .front_page_title{
+        width: 320px;
+        left: 150px;
+    }
+    .front_page_title img{
+        left: 10px;
+    }
+    .front_page_title h1{
+        font-size: 2.4rem;
+    }
+    .btn_primary
+    {
+        width: 320px;
+        left: 280px;
+        top: 320px;
+    }
+    .btn_tertiary
+    {
+        width: 375px;
+        left: 290px;
+        top: 390px;
+    }
+    .modal_box
+    {
+        width: 375px;
+        left: 150px;
+        top: 260px;
+    }
+    .quiz_game
+    {
+        width: 375px;
+        left: 180px;
+        top: 270px;
+    }
+    .quiz_game section .question_text{
+        font-size: 15px;
+    }
+    .end_game_result
+    {
+        width: 320px;
+        left: 180px;
+        top: 260px;
+    }
+    .end_game_result .end_game_result_text{
+        font-size: 15px;
+    }
+    .end_game_result .end_game_result_score_text span{
+        font-size: 10px;
+    }
+    .end_game_result .end_game_buttons button{
+        font-size: 10px;
     }
 }
 @media screen and (max-width: 320px) and (max-height: 480px){
