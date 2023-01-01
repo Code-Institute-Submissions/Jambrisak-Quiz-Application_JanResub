@@ -10,6 +10,8 @@
 body
 {
     background: #004643;
+    height: 100%;
+    position: fixed;
 }
 /*button Primary styling*/
 .btn_primary
