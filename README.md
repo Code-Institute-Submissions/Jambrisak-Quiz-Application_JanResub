@@ -228,13 +228,17 @@ The results were satisfactory on all browsers.
 
 ### Platforms/devices
 Website was tested manually on:
-- Apple Iphone X
-- Apple Ipad.
-- Apple MacBook Air.
-- Samsung Galaxy Tab S7+
-- Ultrawide display 3440x1440.
-- Classic 16:9 2560x1440 display.
-The results were satisfactory and proved good responsiveness on all screen sizes.
+- Iphone 12 pro
+
+### Screen Sizes
+Website was tested manually on:
+- 2560 x 1440 (Wide Screen) //The creators primary monitor
+- 1920 x 1080 (Normal Monitor Size) //The creators 2nd monitor
+- 1600 x 890  (Desktop) //Found at amiresponsive.com
+- 1280 x 802  (Laptop) //Found at amiresponsive.com
+- 768 x 1024  (Tablet) //Found at amiresponsive.com
+- 390 x 844   (Iphone 12 pro) //Found at amiresponsive.com
+- 320 x 480   (Smaller Mobile) //Found in Chrome Dev Tools
 
 ### Bugs
 I encountered a problem when finishing the application when I was working on my restart button. It only did a partial reset, meaning that the application did not reset the player score or the correct / wrong answer.

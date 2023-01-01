@@ -52,7 +52,7 @@ body
 {
     font-size: 15px;
     font-weight: 500;
-    color: #fff;
+    color: #0f0e17;
     padding: 15px 30px;
     border-color: #FFF;
     outline: none;
@@ -60,6 +60,15 @@ body
     background-color: transparent;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
+}
+.btn_tertiary button a{
+    text-decoration: none;
+    color: #fff;
+}
+.btn_tertiary button a:hover{
+    text-decoration: none;
+    color: #001e1d;
 }
 .btn_tertiary button:hover
 {
