@@ -13,6 +13,8 @@ it is responsive across a range of devices and incorporates best practices regar
 The project purpose is a presentation of interactive data. The site should respond to the users actions allowing users to actively
 engage with data, alter the way the site displays the information to achieve their preferred goals.
 
+This project has been heavily based out of a tutorial on the subject on creating a quiz application with a timer. The tutorial that has been followed and been influential in the making of this project is this [CodingNepal](https://www.youtube.com/watch?v=pQr4O1OITJo&t=1s).
+
 ## Table of content
 1. [Project](#project)
 	- [Strategy/Scope](#strategy-scope)
@@ -293,6 +295,8 @@ image
 ```
 
 ## Credits
+### Tutorial
+- [CodingNepal](https://www.youtube.com/watch?v=pQr4O1OITJo&t=1s) - This is the tutorial that has been followed in the making of this project. This project is heavily influenced by this project.
 ### Learning resources
 - [Code Institute](https://codeinstitute.net/se/full-stack-software-development-diploma/?utm_term=code%20institute&utm_campaign=CI+-+SWE+-+Search+-+Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=8983321581&hsa_cam=14660337051&hsa_grp=134087657984&hsa_ad=581817633086&hsa_src=g&hsa_tgt=aud-594467886660:kwd-319867646331&hsa_kw=code%20institute&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjwzNOaBhAcEiwAD7Tb6N3WGiztlBSEN8Er4wdekcvAJ_KwB8GUz1PJfQssgnTLnMNScuTcghoC8-UQAvD_BwE) - The JavaScript section and walkthrough project helped me alot in getting the knowledge needed.
 - [W3C School](https://www.w3schools.com/) - When Code Institute could not give me the answer.
